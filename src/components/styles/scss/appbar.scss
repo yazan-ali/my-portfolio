@@ -1,0 +1,40 @@
+@import 'variableAndMixin';
+
+.appbar{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    display: none;
+    max-height: 80px;
+    transition: max-height 0.2s ease-in;
+    overflow: hidden;
+    .myName{
+    color: #fff;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 20px;
+    font-weight: 600;
+    font-size: 30px;
+    }
+    @include primary-gradient-background-2colors(right, #010934, #290652);
+    &.active{
+        max-height: 0;
+    }
+    @include mobile(768px){
+        display: flex;
+        justify-content: space-between;
+    }
+    label{
+        padding: 0 20px;
+        font-size: 30px;
+        line-height: 80px;
+        cursor: pointer;
+    }
+    label i{
+        font-size: 2rem;
+        color: #fff;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+}

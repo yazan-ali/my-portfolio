@@ -1,0 +1,154 @@
+.sidebar {
+  position: fixed;
+  width: 60px;
+  min-height: 100vh;
+  z-index: 2;
+  background: #010934;
+  background: -webkit-gradient(linear, left top, right top, from(#010934), to(#290652));
+  background: linear-gradient(to right, #010934, #290652);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  overflow: hidden;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 0;
+  }
+  .sidebar.active {
+    width: 200px;
+    -webkit-transition-delay: 0.15s;
+            transition-delay: 0.15s;
+  }
+}
+
+.sidebar.active {
+  width: 200px;
+}
+
+.sidebar #nav-icon {
+  display: none;
+}
+
+.sidebar label {
+  padding-bottom: 10px;
+}
+
+.sidebar label i {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.sidebar hr {
+  width: 80%;
+  margin: auto;
+}
+
+.sidebar nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  min-width: 200px;
+  padding: 20px 0;
+}
+
+.sidebar nav .logo i {
+  font-size: 2rem;
+  min-width: 55px;
+  margin-left: 2px;
+}
+
+.sidebar nav .logo span {
+  font-weight: 600;
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.sidebar nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  min-width: 200px;
+  padding: 0.3rem 0;
+  cursor: pointer;
+}
+
+.sidebar nav a:hover {
+  background-color: #fff;
+}
+
+.sidebar nav a:hover i {
+  color: #290652;
+}
+
+.sidebar nav a:hover span {
+  color: #290652;
+}
+
+.sidebar nav a i {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin-left: 3px;
+  min-width: 50px;
+}
+
+.sidebar nav a span {
+  margin-left: 0.6rem;
+  font-weight: 600;
+}
+
+.sidebar .contacts-nav {
+  position: relative;
+  top: 6rem;
+}
+
+.sidebar .contacts-nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  min-width: 200px;
+  cursor: pointer;
+}
+
+.sidebar .contacts-nav a:hover {
+  background-color: #fff;
+}
+
+.sidebar .contacts-nav a:hover i {
+  color: #290652;
+}
+
+.sidebar .contacts-nav a:hover span {
+  color: #290652;
+}
+
+.sidebar .contacts-nav a i {
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin-left: 3px;
+  min-width: 50px;
+}
+
+.sidebar .contacts-nav a span {
+  font-weight: 600;
+  margin-left: 0.6rem;
+}
+/*# sourceMappingURL=sidebar.css.map */

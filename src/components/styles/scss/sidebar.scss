@@ -1,0 +1,116 @@
+@import "variableAndMixin";
+
+.sidebar{
+    position: fixed;
+    width: 60px;
+    min-height: 100vh;
+    z-index: 2;
+    @include primary-gradient-background-2colors(right, #010934, #290652);
+    transition: all 0.2s ease-in;
+    overflow: hidden;
+    text-align: center;
+    @include mobile(768px){
+        width: 0;
+        &.active{
+            width: 200px;
+            transition-delay: 0.15s;
+        }
+    }
+    &.active{
+        width: 200px;
+    }
+    #nav-icon{
+        display: none;
+    }
+    label{
+        padding-bottom: 10px;
+    }
+    label i{
+        font-size: 1.5rem;
+        color: #fff;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+    }
+    hr{
+        width: 80%;
+        margin: auto;
+    }
+    nav{
+        .logo{
+            display: flex;
+            align-items: center;
+            color: #fff;
+            min-width: 200px;
+            padding: 20px 0;
+            i{
+                font-size: 2rem;
+                min-width: 55px;
+                margin-left: 2px;
+            }
+            span{
+                font-weight: 600;
+                margin-left: 0.5rem;
+                font-size: 1.5rem;
+            }
+        }
+        a{
+            display: flex;
+            align-items: center;
+            color: #fff;
+            min-width: 200px;
+            padding: 0.3rem 0;
+            cursor: pointer;
+            &:hover{
+                background-color: #fff;
+                i{
+                    color: #290652;
+                }
+                span{
+                    color: #290652;
+                }
+            }
+            i{
+                font-size: 1.5rem;
+                padding: 0.5rem;
+                margin-left: 3px;
+                min-width: 50px;
+            }
+            span{
+                margin-left: 0.6rem;
+                font-weight: 600;
+            }
+        }
+    }
+    .contacts-nav{
+        position: relative;
+        top: 6rem;
+        a{
+            display: flex;
+            align-items: center;
+            color: #fff;
+            min-width: 200px;
+            cursor: pointer;
+            &:hover{
+                background-color: #fff;
+                i{
+                    color: #290652;
+                }
+                span{
+                    color: #290652;
+                }
+            }
+            i{
+                font-size: 2rem;
+                padding: 0.5rem;
+                margin-left: 3px;
+                min-width: 50px;
+            }
+             span{
+                font-weight: 600;
+                margin-left: 0.6rem;
+            }
+        }
+    }
+}

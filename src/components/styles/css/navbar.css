@@ -1,0 +1,117 @@
+.navbar {
+  background: #0f0c29;
+  background: -webkit-gradient(linear, left top, right top, from(#010934), color-stop(#0D0048), to(#290652));
+  background: linear-gradient(to right, #010934, #0D0048, #290652);
+  height: 80px;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar .myName {
+  color: #fff;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+@media (max-width: 952px) {
+  .navbar .myName {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+}
+
+.navbar ul {
+  float: right;
+  margin-right: 20px;
+}
+
+@media (max-width: 858px) {
+  .navbar ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #0f0c29;
+    background: -webkit-gradient(linear, left top, right top, from(#010934), color-stop(#0D0048), to(#290652));
+    background: linear-gradient(to right, #010934, #0D0048, #290652);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+}
+
+.navbar ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+@media (max-width: 858px) {
+  .navbar ul li {
+    display: block;
+  }
+}
+
+.navbar ul li a {
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+.navbar ul li a:hover {
+  background: #0f0c29;
+  background: -webkit-gradient(linear, left top, right top, from(#290652), to(#010934));
+  background: linear-gradient(to right, #290652, #010934);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: #fff;
+}
+
+@media (max-width: 858px) {
+  .navbar ul li a:hover {
+    background-color: none;
+    color: #fff;
+  }
+}
+
+@media (max-width: 952px) {
+  .navbar ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .navbar ul li a {
+    font-size: 20px;
+  }
+}
+
+.checkBtn {
+  font-size: 30px;
+  color: #fff;
+  line-height: 80px;
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 858px) {
+  .checkBtn {
+    display: block;
+  }
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ ul {
+  left: 0;
+}
+/*# sourceMappingURL=navbar.css.map */

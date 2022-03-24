@@ -1,0 +1,28 @@
+$primary-color: #0f0c29;
+$secondary-color: #ff652f;
+$text-color: #fff;
+
+@mixin primary-gradient-background-3colors($direction, $color1, $color2, $color3) {
+  background: $color1;
+  background: -webkit-linear-gradient(to $direction, $color1, $color2, $color3);
+  background: linear-gradient(to $direction, $color1, $color2, $color3);
+}
+
+@mixin primary-gradient-background-2colors($direction, $color1, $color2) {
+  background: $color1;
+  background: -webkit-linear-gradient(to $direction, $color1, $color2);
+  background: linear-gradient(to $direction, $color1, $color2);
+}
+
+@mixin display-flex($direction, $justifyContent) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: center;
+}
+
+@mixin mobile($max-width) {
+  @media (max-width: $max-width) {
+    @content;
+  }
+}

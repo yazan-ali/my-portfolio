@@ -1,0 +1,122 @@
+.aboutMe-root {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #010934;
+  background: -webkit-gradient(linear, left top, right top, from(#010934), color-stop(#0D0048), to(#290652));
+  background: linear-gradient(to right, #010934, #0D0048, #290652);
+  width: 100%;
+  opacity: 0.9;
+}
+
+.aboutMe .intro {
+  width: 100%;
+  padding: 0 3rem;
+}
+
+@media (max-width: 768px) {
+  .aboutMe .intro {
+    padding: 3rem 1rem;
+  }
+}
+
+.aboutMe p {
+  color: #CACACA;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.aboutMe .info {
+  color: #fff;
+  margin-left: 3rem;
+}
+
+@media (max-width: 952px) {
+  .aboutMe .info {
+    font-size: 20px;
+  }
+}
+
+.aboutMe div {
+  padding: 0 20px;
+  width: 45%;
+}
+
+@media (max-width: 952px) {
+  .aboutMe div {
+    width: 95%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.aboutMe img {
+  width: 45%;
+}
+
+@media (max-width: 952px) {
+  .aboutMe img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 952px) {
+  .aboutMe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@-webkit-keyframes down {
+  0%, 50% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  50%, 100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+@keyframes down {
+  0%, 50% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  50%, 100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+/*# sourceMappingURL=aboutMe.css.map */

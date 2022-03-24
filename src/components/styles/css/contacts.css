@@ -1,0 +1,98 @@
+.contacts-root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 250px;
+  margin-bottom: 40px;
+}
+
+.contacts-root .contact {
+  background: #EAEAEA;
+  background: -webkit-gradient(linear, left top, left bottom, from(#140E34), to(#010101));
+  background: linear-gradient(to bottom, #140E34, #010101);
+  border-radius: 10px;
+  width: 170px;
+  min-height: 100px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts-root h2 {
+  color: #fff;
+}
+
+.contacts-root a i, .contacts-root span i {
+  font-size: 60px;
+  color: #868686;
+  cursor: pointer;
+}
+
+.contacts-root hr {
+  background-color: #fff;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.contacts-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 858px) {
+  .contacts-container {
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 858px) {
+  .contacts-container .contact {
+    margin-bottom: 20px;
+  }
+}
+
+.copy-message {
+  color: #330C52;
+  background-color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+/*# sourceMappingURL=contacts.css.map */

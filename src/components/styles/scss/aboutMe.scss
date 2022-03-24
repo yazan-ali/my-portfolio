@@ -1,0 +1,62 @@
+@import 'variableAndMixin';
+
+.aboutMe-root{
+    width: 100%;
+    min-height: 100vh;
+    @include display-flex(column, center);
+}
+
+.aboutMe{
+    @include display-flex(row, space-between);
+    @include primary-gradient-background-3colors(right, #010934, #0D0048, #290652);
+    width: 100%;
+    opacity: 0.9;
+    .intro{
+        width: 100%;
+        padding: 0 3rem;
+        @include mobile(768px){
+            padding: 3rem 1rem;
+        }
+    }
+    p{
+        color: #CACACA;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    .info{
+        color: $text-color;
+        margin-left: 3rem;
+        @include mobile(952px){
+            font-size: 20px;
+        }
+    }
+    div{
+        padding: 0 20px;
+        width: 45%;
+        @include mobile(952px){
+            width: 95%;
+            order: 2;
+        }
+    }
+    img{
+        width: 45%;
+        // border-radius: 10px;
+        // animation: down 1s ease infinite alternate;
+        @include mobile(952px){
+            width: 100%;
+        }
+    }
+    @include mobile(952px){
+        flex-direction: column;
+    }
+}
+
+
+@keyframes down {
+  0%, 50% {
+    transform: translateY(5px);
+  }
+  50%, 100% {
+    transform: translateY(-10px);
+  }
+}

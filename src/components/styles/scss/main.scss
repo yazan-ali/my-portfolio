@@ -1,0 +1,114 @@
+@import "config";
+@import "variableAndMixin";
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+.portfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .portfolio-container{
+      display: flex;
+      @include mobile(768px){
+        margin-top: 80px;
+      }
+      &.active{
+        @include mobile(768px){
+          margin-top: 0;
+        }
+      }
+    }
+    .main{
+      width: calc(100% - 60px);
+      transition: all 0.2s ease-in;
+      transform: translateX(60px);
+      @include mobile(768px){
+        transform: translateX(0);
+        width: 100%;
+      }
+      &.active{
+        transform: translateX(200px);
+        width: calc(100% - 200px);
+        @include mobile(768px){
+          width: 100%;
+          transform: translateX(0);
+        }
+      }
+    }
+}
+
+#nav-icon{
+  display: none;
+}
+
+.email-form{
+  width: 100%;
+  margin-top: 50px;
+  @include display-flex(column, center); 
+  color: #fff;
+  h2{
+    text-align: center;
+    width: 50%;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 1rem;
+  }
+  form{
+    @include primary-gradient-background-2colors(right, #010934, #290652);
+    width: 50%;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    p{
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+    input, textarea{
+      display: block;
+      width: 100%;
+      padding: 1.2rem;
+      background: #DFDFDF;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      margin-bottom: 10px;
+      font-size: 1rem;
+      &::placeholder{
+        color: #010934;
+        font-weight: 600;
+      }
+      &:focus{
+        box-shadow: 2px -2px 10px #70248A,
+         -2px 2px 10px #70248A;
+      }
+    }
+    .form-group{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+      @include mobile(768px){
+        flex-direction: column;
+        gap: 0;
+      }
+    }
+    button{
+      color: #010934;
+      background-color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+    }
+    @include mobile(768px){
+      width: 95%;
+    }
+  }
+  @include mobile(768px){
+      padding-bottom: 1.5rem;
+  }
+}

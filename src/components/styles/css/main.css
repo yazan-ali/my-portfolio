@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "PT Sans", sans-serif;
+}
+
+.portfolio {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.portfolio .portfolio-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .portfolio .portfolio-container {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio .portfolio-container.active {
+    margin-top: 0;
+  }
+}
+
+.portfolio .main {
+  width: calc(100% - 60px);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  -webkit-transform: translateX(60px);
+          transform: translateX(60px);
+}
+
+@media (max-width: 768px) {
+  .portfolio .main {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    width: 100%;
+  }
+}
+
+.portfolio .main.active {
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+  width: calc(100% - 200px);
+}
+
+@media (max-width: 768px) {
+  .portfolio .main.active {
+    width: 100%;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+#nav-icon {
+  display: none;
+}
+
+.email-form {
+  width: 100%;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.email-form h2 {
+  text-align: center;
+  width: 50%;
+  border-bottom: 3px solid #fff;
+  padding-bottom: 1rem;
+}
+
+.email-form form {
+  background: #010934;
+  background: -webkit-gradient(linear, left top, right top, from(#010934), to(#290652));
+  background: linear-gradient(to right, #010934, #290652);
+  width: 50%;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.email-form form p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.email-form form input, .email-form form textarea {
+  display: block;
+  width: 100%;
+  padding: 1.2rem;
+  background: #DFDFDF;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.email-form form input::-webkit-input-placeholder, .email-form form textarea::-webkit-input-placeholder {
+  color: #010934;
+  font-weight: 600;
+}
+
+.email-form form input:-ms-input-placeholder, .email-form form textarea:-ms-input-placeholder {
+  color: #010934;
+  font-weight: 600;
+}
+
+.email-form form input::-ms-input-placeholder, .email-form form textarea::-ms-input-placeholder {
+  color: #010934;
+  font-weight: 600;
+}
+
+.email-form form input::placeholder, .email-form form textarea::placeholder {
+  color: #010934;
+  font-weight: 600;
+}
+
+.email-form form input:focus, .email-form form textarea:focus {
+  -webkit-box-shadow: 2px -2px 10px #70248A, -2px 2px 10px #70248A;
+          box-shadow: 2px -2px 10px #70248A, -2px 2px 10px #70248A;
+}
+
+.email-form form .form-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .email-form form .form-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+}
+
+.email-form form button {
+  color: #010934;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .email-form form {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .email-form {
+    padding-bottom: 1.5rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
