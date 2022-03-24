@@ -39,7 +39,7 @@
 
 .aboutMe .intro {
   width: 100%;
-  padding: 0 3rem;
+  padding: 0 45px;
 }
 
 @media (max-width: 768px) {
@@ -50,13 +50,13 @@
 
 .aboutMe p {
   color: #CACACA;
-  font-size: 1.3rem;
+  font-size: 22px;
   font-weight: 600;
 }
 
 .aboutMe .info {
   color: #fff;
-  margin-left: 3rem;
+  margin-left: 50px;
 }
 
 @media (max-width: 952px) {

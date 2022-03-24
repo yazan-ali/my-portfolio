@@ -13,19 +13,19 @@
     opacity: 0.9;
     .intro{
         width: 100%;
-        padding: 0 3rem;
+        padding: 0 45px;
         @include mobile(768px){
             padding: 3rem 1rem;
         }
     }
     p{
         color: #CACACA;
-        font-size: 1.3rem;
+        font-size: 22px;
         font-weight: 600;
     }
     .info{
         color: $text-color;
-        margin-left: 3rem;
+        margin-left: 50px;
         @include mobile(952px){
             font-size: 20px;
         }
@@ -40,8 +40,6 @@
     }
     img{
         width: 45%;
-        // border-radius: 10px;
-        // animation: down 1s ease infinite alternate;
         @include mobile(952px){
             width: 100%;
         }

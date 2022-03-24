@@ -36,10 +36,10 @@
 }
 
 .sidebar label i {
-  font-size: 1.5rem;
+  font-size: 25px;
   color: #fff;
   margin-top: 1rem;
-  padding: 0.5rem;
+  padding: 10px;
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -63,15 +63,14 @@
 }
 
 .sidebar nav .logo i {
-  font-size: 2rem;
+  font-size: 35px;
   min-width: 55px;
-  margin-left: 2px;
 }
 
 .sidebar nav .logo span {
   font-weight: 600;
-  margin-left: 0.5rem;
-  font-size: 1.5rem;
+  margin-left: 10px;
+  font-size: 25px;
 }
 
 .sidebar nav a {
@@ -83,7 +82,7 @@
           align-items: center;
   color: #fff;
   min-width: 200px;
-  padding: 0.3rem 0;
+  padding: 5px 0;
   cursor: pointer;
 }
 
@@ -100,20 +99,20 @@
 }
 
 .sidebar nav a i {
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  margin-left: 3px;
-  min-width: 50px;
+  font-size: 25px;
+  padding: 10px;
+  min-width: 60px;
 }
 
 .sidebar nav a span {
-  margin-left: 0.6rem;
+  margin-left: 10px;
+  font-size: 17px;
   font-weight: 600;
 }
 
 .sidebar .contacts-nav {
   position: relative;
-  top: 6rem;
+  top: 90px;
 }
 
 .sidebar .contacts-nav a {
@@ -141,14 +140,14 @@
 }
 
 .sidebar .contacts-nav a i {
-  font-size: 2rem;
-  padding: 0.5rem;
-  margin-left: 3px;
-  min-width: 50px;
+  font-size: 35px;
+  padding: 10px;
+  min-width: 60px;
 }
 
 .sidebar .contacts-nav a span {
   font-weight: 600;
-  margin-left: 0.6rem;
+  margin-left: 10px;
+  font-size: 17px;
 }
 /*# sourceMappingURL=sidebar.css.map */

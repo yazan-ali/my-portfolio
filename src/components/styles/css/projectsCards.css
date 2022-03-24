@@ -31,7 +31,7 @@
   margin-bottom: 50px;
 }
 
-.projectCard-root h2, .projectCard-root h3 {
+.projectCard-root h2, .projectCard-root p {
   color: #fff;
   text-align: start;
 }
@@ -69,6 +69,8 @@
 
 .projectCard-container .project-info {
   width: 50%;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .projectCard-container .project-img-slider {
@@ -99,6 +101,7 @@
   color: #0f0c29;
   background-color: #fff;
   font-weight: 600;
+  font-size: 17px;
   padding: 10px;
   border-radius: 5px;
   margin-top: 10px;

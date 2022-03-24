@@ -43,10 +43,10 @@ function ProjectCard({ data: { projectName, developmentStack, projectsDiscriptio
                     <ImageSlider imgs={projectImgs} />
                 </div>
                 <div className="project-info">
-                    <h2>{projectName}</h2>
-                    <h3>
+                    <p style={{ fontSize: 25 }}>{projectName}</p>
+                    <p>
                         {projectsDiscription}
-                    </h3>
+                    </p>
                     <hr />
                     <div style={{ width: "100%", marginTop: 20, display: "flex", flexWrap: "wrap" }}>
                         {

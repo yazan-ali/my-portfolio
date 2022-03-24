@@ -111,7 +111,7 @@
 }
 
 .email-form form p {
-  font-size: 1.3rem;
+  font-size: 22px;
   margin-bottom: 1rem;
 }
 
@@ -124,7 +124,7 @@
   border-radius: 5px;
   outline: none;
   margin-bottom: 10px;
-  font-size: 1rem;
+  font-size: 17px;
 }
 
 .email-form form input::-webkit-input-placeholder, .email-form form textarea::-webkit-input-placeholder {
