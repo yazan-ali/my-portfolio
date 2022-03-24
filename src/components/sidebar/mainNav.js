@@ -14,7 +14,7 @@ function MainNav() {
 
     return (
         <nav className="nav-links">
-            <Link onClick={onLinkClick} to="/yazan-ali.com" className="logo">
+            <Link onClick={onLinkClick} to="/" className="logo">
                 <i className="fas fa-laptop-code"></i>
                 <span>Yazan Ali</span>
             </Link>

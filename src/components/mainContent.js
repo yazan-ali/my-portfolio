@@ -16,10 +16,10 @@ function MainContent() {
         <div className={`main ${isActive && "active"}`}>
             <AnimatePresence exitBeforeEnter>
                 <Routes location={location} key={location.pathname}>
-                    <Route path="/yazan-ali.com" element={<AboutMe />} />
-                    <Route path="/yazan-ali.com/skills-and-tools" element={<SkillsAndTools />} />
-                    <Route path="/yazan-ali.com/my-works" element={<ProjectsList />} />
-                    <Route path="/yazan-ali.com/send-email" element={<EmailForm />} />
+                    <Route path="/" element={<AboutMe />} />
+                    <Route path="/skills-and-tools" element={<SkillsAndTools />} />
+                    <Route path="/my-works" element={<ProjectsList />} />
+                    <Route path="/send-email" element={<EmailForm />} />
                 </Routes>
             </AnimatePresence>
         </div>
