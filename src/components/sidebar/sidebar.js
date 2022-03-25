@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, } from 'react';
 import '../styles/css/sidebar.css';
 import MainNav from './mainNav';
 import ContactsNav from './contactsNav';
@@ -8,6 +8,18 @@ import { ActiveContext } from '../sidebarActiveContext';
 function Sidebar() {
 
     const { isActive, toggleActive } = useContext(ActiveContext)
+
+    const pathName = window.location.pathname;
+    const path = pathName === "/" ? "/" : pathName.substr(1);
+
+    const [activeTab, setActiveTab] = useState(path);
+
+    const onLinkClick = (tab) => {
+        if (isActive) {
+            toggleActive()
+        }
+        setActiveTab(tab)
+    }
 
 
     return (
@@ -22,8 +34,8 @@ function Sidebar() {
                 }
             </label>
             <hr size="1" />
-            <MainNav />
-            <ContactsNav />
+            <MainNav activeTab={activeTab} onLinkClick={onLinkClick} />
+            <ContactsNav activeTab={activeTab} onLinkClick={onLinkClick} />
         </aside>
     )
 }

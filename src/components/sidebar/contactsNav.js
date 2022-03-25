@@ -1,16 +1,7 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { ActiveContext } from '../sidebarActiveContext';
 
-function ContactsNav() {
-
-    const { isActive, toggleActive } = useContext(ActiveContext);
-
-    const onLinkClick = () => {
-        if (isActive) {
-            toggleActive()
-        }
-    }
+function ContactsNav({ activeTab, onLinkClick }) {
 
     return (
         <div className="contacts-nav">
@@ -22,7 +13,11 @@ function ContactsNav() {
                 <i className="fab fa-linkedin"></i>
                 <span>LinkedIn</span>
             </a>
-            <Link onClick={onLinkClick} to="/send-email">
+            <Link
+                onClick={() => onLinkClick("send-email")}
+                to="/send-email"
+                className={`${activeTab === "send-email" && "active-tab"}`}
+            >
                 <i className="fas fa-envelope"></i>
                 <span>Email</span>
             </Link>

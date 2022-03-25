@@ -50,6 +50,18 @@
   margin: auto;
 }
 
+.sidebar .active-tab {
+  background-color: #fff;
+}
+
+.sidebar .active-tab i {
+  color: #290652;
+}
+
+.sidebar .active-tab span {
+  color: #290652;
+}
+
 .sidebar nav .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,15 +98,15 @@
   cursor: pointer;
 }
 
-.sidebar nav a:hover {
+.sidebar nav a:not(:first-child):hover {
   background-color: #fff;
 }
 
-.sidebar nav a:hover i {
+.sidebar nav a:not(:first-child):hover i {
   color: #290652;
 }
 
-.sidebar nav a:hover span {
+.sidebar nav a:not(:first-child):hover span {
   color: #290652;
 }
 

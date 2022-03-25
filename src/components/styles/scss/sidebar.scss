@@ -37,6 +37,15 @@
         width: 80%;
         margin: auto;
     }
+    .active-tab{
+        background-color: #fff;
+        i{
+            color: #290652;
+        }
+        span{
+            color: #290652;
+        }
+        }
     nav{
         .logo{
             display: flex;
@@ -61,13 +70,15 @@
             min-width: 200px;
             padding: 5px 0;
             cursor: pointer;
-            &:hover{
-                background-color: #fff;
-                i{
-                    color: #290652;
-                }
-                span{
-                    color: #290652;
+            &:not(:first-child){
+                &:hover{
+                    background-color: #fff;
+                    i{
+                        color: #290652;
+                    }
+                    span{
+                        color: #290652;
+                    }
                 }
             }
             i{
