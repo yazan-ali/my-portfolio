@@ -13,14 +13,13 @@ function ContactsNav({ activeTab, onLinkClick }) {
                 <i className="fab fa-linkedin"></i>
                 <span>LinkedIn</span>
             </a>
-            <Link
-                onClick={() => onLinkClick("send-email")}
-                to="/send-email"
-                className={`${activeTab === "send-email" && "active-tab"}`}
+            <a
+                href="https://drive.google.com/file/d/1ClkllclLso1c0wQtQ3BST9u-oaR4NecC/view?usp=sharing"
+                target="_blank"
             >
-                <i className="fas fa-envelope"></i>
-                <span>Email</span>
-            </Link>
+                <i className="fa-solid fa-file-lines"></i>
+                <span>My Resume</span>
+            </a>
             <a href="tel: +962781976253">
                 <i class="fa-solid fa-square-phone"></i>
                 <span>Phon</span>

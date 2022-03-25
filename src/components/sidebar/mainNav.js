@@ -29,13 +29,14 @@ function MainNav({ activeTab, onLinkClick }) {
                 <i className="fas fa-briefcase"></i>
                 <span>My Works</span>
             </Link>
-            <a onClick={onLinkClick}
-                href="https://drive.google.com/file/d/1ClkllclLso1c0wQtQ3BST9u-oaR4NecC/view?usp=sharing"
-                target="_blank"
+            <Link
+                onClick={() => onLinkClick("contact-me")}
+                to="/contact-me"
+                className={`${activeTab === "contact-me" && "active-tab"}`}
             >
-                <i className="fas fa-file"></i>
-                <span>My Resume</span>
-            </a>
+                <i className="fas fa-envelope"></i>
+                <span>Contact Me</span>
+            </Link>
         </nav>
     )
 }

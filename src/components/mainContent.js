@@ -19,7 +19,7 @@ function MainContent() {
                     <Route path="/" element={<AboutMe />} />
                     <Route path="/skills-and-tools" element={<SkillsAndTools />} />
                     <Route path="/my-works" element={<ProjectsList />} />
-                    <Route path="/send-email" element={<EmailForm />} />
+                    <Route path="/contact-me" element={<EmailForm />} />
                 </Routes>
             </AnimatePresence>
         </div>
