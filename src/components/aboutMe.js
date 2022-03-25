@@ -30,7 +30,7 @@ function AboutMe() {
                     <p style={{ paddingBottom: 12 }}>{`${"</about-me>"}`}</p>
                     <p>{`${"<my-motivation>"}`}</p>
                     <p className="info">
-                        The idea of learning how to build something I used daily like websites and games
+                        The idea of learning how to build something I used daily like web applications and games
                         and knowing how it works is what keeps me motivated to learn more and more.
                     </p>
                     <p style={{ paddingBottom: 12 }}>{`${"</my-motivation>"}`}</p>
