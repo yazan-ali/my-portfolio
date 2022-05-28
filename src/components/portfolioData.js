@@ -99,6 +99,14 @@ const skillsData = [
         animationDiriction: "right",
         skillLogoWidth: 100,
         delay: 1
+    }, {
+        skillName: "Next JS",
+        color: "#E3E3E3",
+        skillLogo: { img: true, logo: "https://res.cloudinary.com/pic-gallary/image/upload/v1653733553/my-portofolio/nextjs-boilerplate-logo_sjtf99.png" },
+        duration: 1.5,
+        animationDiriction: "left",
+        skillLogoWidth: 100,
+        delay: 1.2
     }
 ];
 
@@ -218,7 +226,7 @@ const pizzaHouseDevelopmentStack = [
         color: "#e34c26",
     },
     {
-        name: "CSS",
+        name: "SCSS",
         color: "#264de4"
     },
     {
@@ -226,20 +234,12 @@ const pizzaHouseDevelopmentStack = [
         color: "#f0db4f"
     },
     {
-        name: "React Js",
+        name: "Next Js",
         color: "#00d8ff"
     },
     {
-        name: "Material-UI",
-        color: "#5A9DE1"
-    },
-    {
-        name: "Node Js",
-        color: "#3c873a"
-    },
-    {
-        name: "Express Js",
-        color: ""
+        name: "NextAuth",
+        color: "#00d8ff"
     },
     {
         name: "MongoDB",
@@ -288,6 +288,25 @@ const promotionSystemDevelopmentStack = [
 
 const projectsData = [
     {
+        projectName: "Next Js App",
+        developmentStack: pizzaHouseDevelopmentStack,
+        projectsDiscription: "A full stack website developed using Next js it's a website for a restaurant the owner can add, update and delete meals and the user can shop and add items to the shopping cart",
+        backgroundColor: [
+            '#0f0c29',
+            '-webkit-linear-gradient(to right, #290652, #010934)',
+            'linear-gradient(to right, #290652, #010934)'
+        ],
+        projectImgs: [
+            "https://res.cloudinary.com/pic-gallary/image/upload/v1653730622/my-portofolio/28.05.2022_12.31.57_REC_t42xfk.png",
+            "https://res.cloudinary.com/pic-gallary/image/upload/v1653730612/my-portofolio/28.05.2022_12.32.39_REC_rnola3.png",
+            "https://res.cloudinary.com/pic-gallary/image/upload/v1653730612/my-portofolio/28.05.2022_12.33.23_REC_ydlsuw.png",
+            "https://res.cloudinary.com/pic-gallary/image/upload/v1653730617/my-portofolio/28.05.2022_12.34.42_REC_kav1wt.png"
+        ],
+        direction: "left",
+        liveSiteLink: "https://pizza-house-6be18z61n-yazan-ali.vercel.app",
+        projectCodeLink: "https://github.com/yazan-ali/next-js-restaurant-app"
+    },
+    {
         projectName: "My Graduation Project",
         developmentStack: promotionSystemDevelopmentStack,
         projectsDiscription: "A promotion system for teachers, in my univsity they didn't have an online promotion system so i develop this website to help teachers create and tracking thier promotion requset and for teachers who supervising the promotion process they alos can upload requierd files, aprrove or reject the promotion request or send the promotion request by email to supervisors from outside the university. this website developed using :",
@@ -301,7 +320,7 @@ const projectsData = [
             "https://res.cloudinary.com/pic-gallary/image/upload/v1640883390/my-portofolio/%D9%A2%D9%A0%D9%A2%D9%A1%D9%A1%D9%A2%D9%A3%D9%A0_%D9%A1%D9%A8%D9%A5%D9%A5%D9%A2%D9%A7_bnhhkz.jpg",
             "https://res.cloudinary.com/pic-gallary/image/upload/v1642161636/my-portofolio/Screenshot_309_f8svfa.png"
         ],
-        direction: "left",
+        direction: "right",
         projectCodeLink: "https://github.com/yazan-ali/promotion-system-my-graduation-project"
     },
     {
@@ -319,27 +338,9 @@ const projectsData = [
             "https://res.cloudinary.com/pic-gallary/image/upload/v1640880476/my-portofolio/%D9%A2%D9%A0%D9%A2%D9%A1%D9%A1%D9%A2%D9%A3%D9%A0_%D9%A1%D9%A8%D9%A0%D9%A5%D9%A2%D9%A6_jtvewu.jpg",
             "https://res.cloudinary.com/pic-gallary/image/upload/v1640880476/my-portofolio/%D9%A2%D9%A0%D9%A2%D9%A1%D9%A1%D9%A2%D9%A3%D9%A0_%D9%A1%D9%A8%D9%A0%D9%A5%D9%A1%D9%A0_q8c4em.jpg",
         ],
-        direction: "right",
+        direction: "left",
         liveSiteLink: "https://inspiring-babbage-e50db6.netlify.app/",
         projectCodeLink: "https://github.com/yazan-ali/study-material-client"
-    },
-    {
-        projectName: "Pizza House",
-        developmentStack: pizzaHouseDevelopmentStack,
-        projectsDiscription: "A full stack website developed using :",
-        backgroundColor: [
-            '#3F0E10',
-            '-webkit-linear-gradient(to left, #3F0E10, #240b36)',
-            'linear-gradient(to left, #3F0E10, #240b36)'
-        ],
-        projectImgs: [
-            "https://res.cloudinary.com/pic-gallary/image/upload/v1625053736/my-portofolio/res_img1_jq9qwy.jpg",
-            "https://res.cloudinary.com/pic-gallary/image/upload/v1625051692/my-portofolio/res_img2_zb2d2j.jpg",
-            "https://res.cloudinary.com/pic-gallary/image/upload/v1625051692/my-portofolio/res_img3_tjweoi.jpg",
-        ],
-        direction: "left",
-        liveSiteLink: "https://limitless-beyond-06124.herokuapp.com/",
-        projectCodeLink: "https://github.com/yazan-ali/restaurant-project"
     },
     {
         projectName: "Cars Show",

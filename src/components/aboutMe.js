@@ -22,7 +22,7 @@ function AboutMe() {
                     <p>{`${"<body>"}`}</p>
                     <p style={{ paddingTop: 12 }}>{`${"<about-me>"}`}</p>
                     <p className="info">Hey, My Name is Yazan Ali.</p>
-                    <p className="info">I'm A software engineering student &
+                    <p className="info">I'm a software engineering student &
                         full stack web developer with a passion for
                         learning new technologies and developing modern web applications,
                         I'm also interested in machine learning and game development.
