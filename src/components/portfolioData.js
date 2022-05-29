@@ -303,7 +303,7 @@ const projectsData = [
             "https://res.cloudinary.com/pic-gallary/image/upload/v1653730617/my-portofolio/28.05.2022_12.34.42_REC_kav1wt.png"
         ],
         direction: "left",
-        liveSiteLink: "https://pizza-house-6be18z61n-yazan-ali.vercel.app",
+        liveSiteLink: "https://pizza-house.vercel.app",
         projectCodeLink: "https://github.com/yazan-ali/next-js-restaurant-app"
     },
     {
