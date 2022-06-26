@@ -8,7 +8,7 @@ function Appbar() {
 
     return (
         <div className={`appbar ${isActive && "active"}`}>
-            <label className="myName">Yazan Ali</label>
+            <label className="myName">Yazan Abuali</label>
             <input onChange={toggleActive} id="nav-icon" type="checkbox" />
             <label htmlFor="nav-icon">
                 <i className="fas fa-bars"></i>
