@@ -14,7 +14,7 @@ function ContactsNav({ activeTab, onLinkClick }) {
                 <span>LinkedIn</span>
             </a>
             <a
-                href="https://drive.google.com/file/d/1ClkllclLso1c0wQtQ3BST9u-oaR4NecC/view?usp=sharing"
+                href="https://drive.google.com/file/d/1wcuB_0jGK-771DJu1oU06TdUnXvPEW3B/view"
                 target="_blank"
             >
                 <i className="fa-solid fa-file-lines"></i>

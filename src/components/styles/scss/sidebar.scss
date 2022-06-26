@@ -1,6 +1,6 @@
 @import "variableAndMixin";
 
-.sidebar{
+.sidebar {
     position: fixed;
     width: 60px;
     min-height: 100vh;
@@ -9,23 +9,29 @@
     transition: all 0.2s ease-in;
     overflow: hidden;
     text-align: center;
-    @include mobile(768px){
+
+    @include mobile(768px) {
         width: 0;
-        &.active{
+
+        &.active {
             width: 200px;
             transition-delay: 0.15s;
         }
     }
-    &.active{
+
+    &.active {
         width: 200px;
     }
-    #nav-icon{
+
+    #nav-icon {
         display: none;
     }
-    label{
+
+    label {
         padding-bottom: 10px;
     }
-    label i{
+
+    label i {
         font-size: 25px;
         color: #fff;
         margin-top: 1rem;
@@ -33,91 +39,111 @@
         cursor: pointer;
         transition: all 0.2s ease-in;
     }
-    hr{
+
+    hr {
         width: 80%;
         margin: auto;
     }
-    .active-tab{
+
+    .active-tab {
         background-color: #fff;
         box-shadow: -0.2px 0.2px 5px #A83ACE, 0.2px -0.2px 5px #A83ACE;
-        i{
+
+        i {
             color: #290652;
         }
-        span{
+
+        span {
             color: #290652;
         }
-        }
-    nav{
-        .logo{
+    }
+
+    nav {
+        .logo {
             display: flex;
             align-items: center;
             color: #fff;
             min-width: 200px;
             padding: 20px 0;
-            i{
+
+            i {
                 font-size: 35px;
                 min-width: 55px;
             }
-            span{
+
+            span {
                 font-weight: 600;
                 margin-left: 10px;
-                font-size: 25px;
+                font-size: 21px;
             }
         }
-        a{
+
+        a {
             display: flex;
             align-items: center;
             color: #fff;
             min-width: 200px;
             padding: 5px 0;
             cursor: pointer;
-            &:not(:first-child){
-                &:hover{
+
+            &:not(:first-child) {
+                &:hover {
                     background-color: #fff;
-                    i{
+
+                    i {
                         color: #290652;
                     }
-                    span{
+
+                    span {
                         color: #290652;
                     }
                 }
             }
-            i{
+
+            i {
                 font-size: 25px;
                 padding: 10px;
                 min-width: 60px;
             }
-            span{
+
+            span {
                 margin-left: 10px;
                 font-size: 17px;
                 font-weight: 600;
             }
         }
     }
-    .contacts-nav{
+
+    .contacts-nav {
         position: relative;
         top: 90px;
-        a{
+
+        a {
             display: flex;
             align-items: center;
             color: #fff;
             min-width: 200px;
             cursor: pointer;
-            &:hover{
+
+            &:hover {
                 background-color: #fff;
-                i{
+
+                i {
                     color: #290652;
                 }
-                span{
+
+                span {
                     color: #290652;
                 }
             }
-            i{
+
+            i {
                 font-size: 35px;
                 padding: 10px;
                 min-width: 60px;
             }
-             span{
+
+            span {
                 font-weight: 600;
                 margin-left: 10px;
                 font-size: 17px;

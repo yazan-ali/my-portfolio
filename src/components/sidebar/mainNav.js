@@ -7,7 +7,7 @@ function MainNav({ activeTab, onLinkClick }) {
         <nav className="nav-links">
             <Link onClick={() => onLinkClick("/")} to="/" className="logo">
                 <i className="fas fa-laptop-code"></i>
-                <span>Yazan Ali</span>
+                <span>Yazan Abuali</span>
             </Link>
             <Link onClick={() => onLinkClick("/")} to="/" className={`${activeTab === "/" && "active-tab"}`}>
                 <i className="fa-solid fa-house"></i>
