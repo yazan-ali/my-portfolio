@@ -1,0 +1,50 @@
+@mixin media($breakpoint) {
+    @if $breakpoint =="md" {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+}
+
+@mixin slice($place, $background: #4b45bd) {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: toRem(200);
+    height: toRem(200);
+    background: $background;
+    display: none;
+
+    @include media("md") {
+        width: toRem(150);
+        height: toRem(150);
+    }
+
+    @if $place =="top-left" {
+        top: 0;
+        left: 0;
+        border-radius: 0 0 toRem(200) 0;
+    }
+
+    @else if $place =="top-right" {
+        top: 0;
+        right: 0;
+        border-radius: 0 0 0 toRem(200);
+    }
+
+    @else if $place =="bottom-left" {
+        bottom: 0;
+        left: 0;
+        border-radius: 0 toRem(200) 0 0;
+    }
+
+    @else if $place =="bottom-right" {
+        bottom: 0;
+        right: 0;
+        border-radius: toRem(200) 0 0 0;
+    }
+
+    @include media("md") {
+        display: block;
+    }
+}

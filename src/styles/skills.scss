@@ -1,0 +1,50 @@
+@import "./helpers.scss";
+
+.skills {
+    &::before {
+        @include slice("top-left");
+    }
+
+    .skill {
+        position: relative;
+        width: 45%;
+
+        @include media("md") {
+            width: 20%;
+        }
+
+        .glowing-bg {
+            position: absolute;
+            top: toRem(-2);
+            left: toRem(-2);
+            z-index: -1;
+            background-size: 250%;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing-bg 5s linear infinite;
+            border-radius: toRem(10);
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 0 toRem(10) rgba(0, 0, 0, 0.3);
+        }
+
+        &:hover {
+            .glowing-bg {
+                background-size: 150%;
+            }
+        }
+    }
+}
+
+@keyframes glowing-bg {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        // background-position: right;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}

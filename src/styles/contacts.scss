@@ -1,0 +1,23 @@
+@use "sass:map";
+@import "./helpers.scss";
+
+.contacts {
+    right: 0;
+    z-index: map.get($z-index, "contacts");
+
+    &__list {
+        background: rgba(255, 255, 255, 0.2);
+        border-top-left-radius: toRem(10);
+        border-bottom-left-radius: toRem(10);
+        box-shadow: 0 0 toRem(10) rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(toRem(5));
+        border: toRem(1) solid rgba(0, 0, 0, 0.2);
+        transition: all 0.2s ease-in-out;
+        width: toRem(50);
+        overflow: hidden;
+
+        &:hover {
+            width: toRem(130);
+        }
+    }
+}
