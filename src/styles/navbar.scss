@@ -55,7 +55,18 @@
         }
     }
 
-    .nav__toggle[type="checkbox"]:checked~.nav {
-        height: 40%;
+    .nav-toggle[type="checkbox"]:checked {
+        &~.nav {
+            height: 40%;
+        }
+
+        &~.nav-toggle__wrapper .nav-toggle__btn .nav-toggle__bars {
+            display: none;
+        }
+
+        &~.nav-toggle__wrapper .nav-toggle__btn .nav-toggle__cross {
+            display: block;
+        }
     }
+
 }

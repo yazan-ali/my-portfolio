@@ -1,23 +1,9 @@
-
-
 export default function PageBG() {
   return (
     <div className="page-bg">
-      <div><span className="dot"></span></div>
-      <div><span className="dot"></span></div>
-      <div><span className="dot"></span></div>
-      <div><span className="dot"></span></div>
-      <div><span className="dot"></span></div>
-      <div><span className="dot"></span></div>
-      <div><span className="dot"></span></div>
-      <div><span className="dot"></span></div>
-      <div><span className="dot"></span></div>
-      <div><span className="dot"></span></div>
-      <div><span className="dot"></span></div>
-      <div><span className="dot"></span></div>
-      <div><span className="dot"></span></div>
-      <div><span className="dot"></span></div>
-      <div><span className="dot"></span></div>
+      {Array.from({ length: 15 }).map(i => (
+        <div className="bubble"><span className="bubble__dot"></span></div>
+      ))}
     </div>
   )
 }

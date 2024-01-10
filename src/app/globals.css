@@ -14,7 +14,7 @@ html {
     z-index: -1;
 }
 
-.page-bg div {
+.page-bg .bubble {
     height: 30px;
     width: 30px;
     border: 2px solid #58caea;
@@ -25,7 +25,7 @@ html {
     animation: 4s linear infinite;
 }
 
-div .dot {
+.bubble__dot {
     height: 5px;
     width: 5px;
     border-radius: 50px;
@@ -35,91 +35,91 @@ div .dot {
     right: 20%;
 }
 
-.page-bg div:nth-child(1) {
+.page-bg .bubble:nth-child(1) {
     top: 20%;
     left: 20%;
     animation: animate 8s linear infinite;
 }
 
-.page-bg div:nth-child(2) {
+.page-bg .bubble:nth-child(2) {
     top: 60%;
     left: 80%;
     animation: animate 10s linear infinite;
 }
 
-.page-bg div:nth-child(3) {
+.page-bg .bubble:nth-child(3) {
     top: 40%;
     left: 40%;
     animation: animate 3s linear infinite;
 }
 
-.page-bg div:nth-child(4) {
+.page-bg .bubble:nth-child(4) {
     top: 66%;
     left: 30%;
     animation: animate 7s linear infinite;
 }
 
-.page-bg div:nth-child(5) {
+.page-bg .bubble:nth-child(5) {
     top: 90%;
     left: 10%;
     animation: animate 9s linear infinite;
 }
 
-.page-bg div:nth-child(6) {
+.page-bg .bubble:nth-child(6) {
     top: 30%;
     left: 60%;
     animation: animate 5s linear infinite;
 }
 
-.page-bg div:nth-child(7) {
+.page-bg .bubble:nth-child(7) {
     top: 70%;
     left: 20%;
     animation: animate 8s linear infinite;
 }
 
-.page-bg div:nth-child(8) {
+.page-bg .bubble:nth-child(8) {
     top: 75%;
     left: 60%;
     animation: animate 10s linear infinite;
 }
 
-.page-bg div:nth-child(9) {
+.page-bg .bubble:nth-child(9) {
     top: 50%;
     left: 50%;
     animation: animate 6s linear infinite;
 }
 
-.page-bg div:nth-child(10) {
+.page-bg .bubble:nth-child(10) {
     top: 45%;
     left: 20%;
     animation: animate 10s linear infinite;
 }
 
-.page-bg div:nth-child(11) {
+.page-bg .bubble:nth-child(11) {
     top: 10%;
     left: 90%;
     animation: animate 9s linear infinite;
 }
 
-.page-bg div:nth-child(12) {
+.page-bg .bubble:nth-child(12) {
     top: 20%;
     left: 70%;
     animation: animate 7s linear infinite;
 }
 
-.page-bg div:nth-child(13) {
+.page-bg .bubble:nth-child(13) {
     top: 20%;
     left: 20%;
     animation: animate 8s linear infinite;
 }
 
-.page-bg div:nth-child(14) {
+.page-bg .bubble:nth-child(14) {
     top: 60%;
     left: 5%;
     animation: animate 6s linear infinite;
 }
 
-.page-bg div:nth-child(15) {
+.page-bg .bubble:nth-child(15) {
     top: 90%;
     left: 80%;
     animation: animate 9s linear infinite;
