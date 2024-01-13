@@ -1,0 +1,37 @@
+@import "./helpers.scss";
+
+.experience {
+    .experience-card {
+        margin-top: -1px;
+
+        &__company-logo {
+            width: toRem(100);
+            height: toRem(100);
+            background: transparent;
+            background-image: linear-gradient(white, white), linear-gradient(#4cb3d0, #4b45bd);
+            background-clip: padding-box, border-box;
+            background-origin: border-box;
+            border: toRem(8) solid transparent;
+            border-radius: 50%;
+        }
+
+        &__progress-bar {
+            height: toRem(300);
+            border-left: toRem(10) solid transparent;
+            border-image: linear-gradient(#4b45bd, #4cb3d0);
+            border-image-slice: 1;
+            margin-top: toRem(-1);
+
+            @include media("md") {
+                height: toRem(250);
+            }
+        }
+
+        &__details {
+            color: #fff;
+            background: $bg-primary;
+            padding: 1rem;
+            border-radius: toRem(10);
+        }
+    }
+}

@@ -2,8 +2,8 @@ import AboutMe from "@/components/aboutMe";
 import Skills from "@/components/skills";
 import Contacts from '@/components/contacts';
 import PageBG from "@/components/pageBG";
-import ImageSlider from '@/components/imageSlider';
 import Projects from '@/components/projects';
+import Experience from '@/components/experience';
 import '@/styles/buttons.scss';
 import '@/styles/typography.scss';
 
@@ -15,6 +15,7 @@ export default function Protfolio() {
       <Contacts />
       <Skills />
       <Projects />
+      <Experience />
     </>
   )
 }

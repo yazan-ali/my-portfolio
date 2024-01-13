@@ -42,7 +42,7 @@ function ImageSlider({ imgs }) {
             {
                 imgs.map((img: string, idx: number) => (
                     <div key={idx} className={slideIndex === idx + 1 ? "slide active-anim" : "slide"} >
-                        <img src={img} alt={`img${idx}`} />
+                        <img src={img} alt={`img${idx}`} loading='lazy' />
                     </div>
                 ))
             }

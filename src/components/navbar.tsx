@@ -16,16 +16,16 @@ export default function Navbar() {
                 </div>
                 <ul className="nav md:flex px-4 md:px-0">
                     <li className="py-2 md:py-0 md:px-3">
-                        <a href="#">About Me</a>
+                        <a href="#about-me">About Me</a>
                     </li>
                     <li className="py-2 md:py-0 md:px-3">
-                        <a href="#">Skills</a>
+                        <a href="#skills">Skills</a>
                     </li>
                     <li className="py-2 md:py-0 md:px-3">
-                        <a href="#">Experience</a>
+                        <a href="#projects">Projects</a>
                     </li>
                     <li className="py-2 md:py-0 md:px-3">
-                        <a href="#">Projects</a>
+                        <a href="#experience">Experience</a>
                     </li>
                 </ul>
             </div>

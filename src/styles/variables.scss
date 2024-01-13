@@ -2,6 +2,7 @@ $primary: linear-gradient(180deg, #e5a4ed, #7a5bf5);
 $secondary: linear-gradient(90deg, #4cb3d0, #4b45bd);
 $bg-primary: linear-gradient(90deg, #7a5bf5, #4cb3d0);
 $z-index: (
+    "header": 11,
     "navbar": 10,
     "contacts": 9
 );

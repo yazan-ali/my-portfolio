@@ -378,4 +378,30 @@ const projects = [
     },
 ];
 
-export { skills, contacts, projects }
+const experiences = [
+    {
+        company: "Norsia",
+        companyLogo: "/images/norsia-logo.png",
+        position: "React JS Developer",
+        startDate: "10/2020",
+        endDate: "03/2021",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    },
+    {
+        company: "Atypon",
+        companyLogo: "/images/atypon-logo.svg",
+        position: "Forntend Engineer Intern",
+        startDate: "06/2022",
+        endDate: "09/2022",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    },
+    {
+        company: "Atypon",
+        companyLogo: "/images/atypon-logo.svg",
+        position: "Software Engineer",
+        startDate: "09/2022",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    },
+]
+
+export { skills, contacts, projects, experiences }
