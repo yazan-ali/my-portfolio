@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import "@/styles/aboutMe.scss";
 
 export default function AboutMe() {
@@ -12,7 +13,7 @@ export default function AboutMe() {
                     </p>
                     <a href="#skills" className="btn btn-primary mt-3">Know More</a>
                 </div>
-                <img src="/images/example-12.svg" className="flex-1" alt="" role="presentation" />
+                <Image src="/images/example-12.svg" className="flex-1" width="300" height="300" alt="Developer illustration" role="presentation" loading='eager' />
             </div>
         </section>
     )

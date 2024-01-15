@@ -1,21 +1,12 @@
 'use client';
-import React, { useState, useEffect } from 'react';
-import '@/styles/imageSlider.scss';
+import { useState } from 'react';
+import Image from 'next/image';
 import BtnSlider from './btnSlider';
+import '@/styles/imageSlider.scss';
 
 function ImageSlider({ imgs }) {
 
     const [slideIndex, setSlideIndex] = useState(1);
-
-    // useEffect(() => {
-    //     setInterval(() => {
-    //         if (slideIndex === imgs.length) {
-    //             setSlideIndex(1);
-    //         } else {
-    //             setSlideIndex(slideIndex + 1);
-    //         }
-    //     }, 1500)
-    // }, [])
 
     const nextSlide = () => {
         if (slideIndex !== imgs.length) {
@@ -42,7 +33,7 @@ function ImageSlider({ imgs }) {
             {
                 imgs.map((img: string, idx: number) => (
                     <div key={idx} className={slideIndex === idx + 1 ? "slide active-anim" : "slide"} >
-                        <img src={img} alt={`img${idx}`} loading='lazy' />
+                        <Image src={img} alt={`img${idx}`} width="300" height="300" loading='lazy' />
                     </div>
                 ))
             }

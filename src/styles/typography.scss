@@ -11,7 +11,7 @@
     width: 100%;
     text-align: center;
     border-bottom: 5px solid transparent;
-    border-image: radial-gradient(#4b45bd, #4cb3d0, #e5a4ed);
+    border-image: linear-gradient(#4b45bd, #4cb3d0);
     border-image-slice: 1;
     padding-bottom: toRem(10);
     margin-bottom: toRem(10);

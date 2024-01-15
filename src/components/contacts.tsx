@@ -7,7 +7,7 @@ export default function Contacts() {
             <ul className="contacts__list px-3 py-6">
                 <li>
                     {contacts.map(contact => (
-                        <a href="#" className="flex items-center w-28 mt-3">
+                        <a href={contact.link} className="flex items-center w-28 mt-3" target="_blank">
                             <FontAwesomeIcon icon={contact.icon} className="w-6" color={contact.color} />
                             <span className="font-medium ml-3">{contact.contactType}</span>
                         </a>

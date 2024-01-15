@@ -37,11 +37,13 @@ function ProjectCard({ data: { projectName, developmentStack, projectsDiscriptio
                             rel="noreferrer" href={liveSiteLink} target="_blank">Live Site
                         </a>
                     }
-                    <a
-                        style={{
-                            background: backgroundColor,
-                        }}
-                        rel="noreferrer" href={projectCodeLink} target="_blank">View Code</a>
+                    {projectCodeLink &&
+                        <a
+                            style={{
+                                background: backgroundColor,
+                            }}
+                            rel="noreferrer" href={projectCodeLink} target="_blank">View Code</a>
+                    }
                 </div>
             </div>
         </div >

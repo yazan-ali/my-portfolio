@@ -155,21 +155,25 @@ const contacts = [
         contactType: "Github",
         icon: faGithub,
         color: "#292929",
+        link: "https://github.com/yazan-ali"
     },
     {
         contactType: "Linkedin",
         icon: faLinkedin,
         color: "#0077b5",
+        link: "https://www.linkedin.com/in/yazan-abuali-564a76177/"
     },
     {
         contactType: "CV",
         icon: faFile,
         color: "#00BFBB",
+        link: "https://drive.google.com/file/d/1wcuB_0jGK-771DJu1oU06TdUnXvPEW3B/view"
     },
     {
         contactType: "Phon",
         icon: faSquarePhone,
         color: "#025E1B",
+        link: "tel: +962781976253"
     }
 ];
 
@@ -220,35 +224,28 @@ const studyMaterialDevelopmentStack = [
     },
 ];
 
-const carsShowDevelopmentStack = [
+const ascoDevelopmentStack = [
     {
-        name: "HTML",
-        color: "#e34c26",
+        name: "HTML"
     },
     {
-        name: "CSS",
-        color: "#264de4"
+        name: "SCSS"
     },
     {
-        name: "JavaScript",
-        color: "#f0db4f"
+        name: "JavaScript"
     },
     {
-        name: "Bootstrap",
-        color: "#563d7c"
+        name: "TypeScript"
     },
     {
-        name: "Node Js",
-        color: "#3c873a"
+        name: "Bootstrap"
     },
     {
-        name: "Express Js",
-        color: ""
+        name: "Jest",
     },
     {
-        name: "MongoDB",
-        color: "#589636"
-    },
+        name: "Webpack"
+    }
 ];
 
 const pizzaHouseDevelopmentStack = [
@@ -319,6 +316,20 @@ const promotionSystemDevelopmentStack = [
 
 const projects = [
     {
+        projectName: "ASCO Publications",
+        developmentStack: ascoDevelopmentStack,
+        projectsDiscription: "A website for American Society of Clinical Oncology publcations, where the users can navigate different journals, list of issues, table of contents and read many articles, I worked on the front-end part using:",
+        backgroundColor: "#002557",
+
+        projectImgs: [
+            "/images/asco-1.png",
+            "/images/asco-2.png",
+            "/images/asco-3.png"
+        ],
+        direction: "right",
+        liveSiteLink: "https://ascopubs.org/",
+    },
+    {
         projectName: "My Graduation Project",
         developmentStack: promotionSystemDevelopmentStack,
         projectsDiscription: "A promotion system for teachers, in my univsity they didn't have an online promotion system so i develop this website to help teachers create and tracking thier promotion requset and for teachers who supervising the promotion process they alos can upload requierd files, aprrove or reject the promotion request or send the promotion request by email to supervisors from outside the university. this website developed using :",
@@ -361,20 +372,6 @@ const projects = [
         direction: "left",
         liveSiteLink: "https://inspiring-babbage-e50db6.netlify.app/",
         projectCodeLink: "https://github.com/yazan-ali/study-material-client"
-    },
-    {
-        projectName: "Cars Show",
-        developmentStack: carsShowDevelopmentStack,
-        projectsDiscription: "A full stack website developed using :",
-        backgroundColor: "#02022C",
-
-        projectImgs: [
-            "https://res.cloudinary.com/pic-gallary/image/upload/v1625051706/my-portofolio/cars_img2_pjpkf4.png",
-            "https://res.cloudinary.com/pic-gallary/image/upload/v1625051695/my-portofolio/cars_img1_csdfz2.png",
-        ],
-        direction: "right",
-        liveSiteLink: "https://damp-lake-71862.herokuapp.com/",
-        projectCodeLink: "https://github.com/yazan-ali/cars-show-project"
     },
 ];
 

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Skill({ skillName, skillLogo, color, skillLogoWidth }) {
@@ -9,7 +10,7 @@ export default function Skill({ skillName, skillLogo, color, skillLogoWidth }) {
             ></div>
             {
                 skillLogo.img ?
-                    <img style={{ borderRadius: 10, width: skillLogoWidth }} src={skillLogo.logo} alt={skillName} />
+                    <Image style={{ borderRadius: 10, width: skillLogoWidth }} width={skillLogoWidth} height={skillLogoWidth} src={skillLogo.logo} alt={skillName} />
                     :
                     <FontAwesomeIcon icon={skillLogo} className="w-32" color={color} />
 

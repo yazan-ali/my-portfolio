@@ -27,6 +27,9 @@ export default function Navbar() {
                     <li className="py-2 md:py-0 md:px-3">
                         <a href="#experience">Experience</a>
                     </li>
+                    <li className="py-2 md:py-0 md:px-3">
+                        <a href="#contact-me">Contact Me</a>
+                    </li>
                 </ul>
             </div>
         </nav>
