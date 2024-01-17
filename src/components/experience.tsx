@@ -4,7 +4,7 @@ import '@/styles/experience.scss';
 
 export default function Experience() {
     return (
-        <section id="experience" className="experience relative mt-8">
+        <section id="experience" className="experience relative overflow-x-hidden mt-8">
             <div className="container lg:w-4/5">
                 <h2 className='styled-heading styled-border text-2xl font-bold pt-4'>Professional Experience</h2>
                 {

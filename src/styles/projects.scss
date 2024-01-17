@@ -1,5 +1,13 @@
 @import "./helpers.scss";
 
+.projects__stacked-cards {
+    height: toRem(850);
+
+    @include media("md") {
+        height: toRem(450);
+    }
+}
+
 .project-card {
     // width: 100%;
     // height: 100%;

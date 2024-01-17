@@ -3,9 +3,11 @@ import ImageSlider from '@/components/imageSlider';
 import '@/styles/projects.scss';
 
 
-function ProjectCard({ data: { projectName, developmentStack, projectsDiscription, projectImgs, backgroundColor, liveSiteLink, projectCodeLink } }) {
+function ProjectCard(props) {
+    const { projectName, developmentStack, projectsDiscription, projectImgs, backgroundColor, liveSiteLink, projectCodeLink } = props.data;
+
     return (
-        <div className="project-card md:flex items-center w-full gap-8 p-6"
+        <div className="project-card md:flex items-center h-full w-full overflow-hidden gap-8 p-6"
             style={{
                 backgroundImage: `linear-gradient(to bottom, ${backgroundColor}, #fff)`,
                 boxShadow: `-2px 2px 10px ${backgroundColor}80`
@@ -14,8 +16,8 @@ function ProjectCard({ data: { projectName, developmentStack, projectsDiscriptio
             <div className="project-card__img-slider md:w-1/2">
                 <ImageSlider imgs={projectImgs} />
             </div>
-            <div className="project-card__info md:w-1/2">
-                <p style={{ fontSize: 25 }}>{projectName}</p>
+            <div className="project-card__info h-full md:w-1/2">
+                <p className='text-2xl'>{projectName}</p>
                 <p>
                     {projectsDiscription}
                 </p>

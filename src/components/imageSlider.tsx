@@ -37,8 +37,8 @@ function ImageSlider({ imgs }) {
                     </div>
                 ))
             }
-            {/* <BtnSlider moveSlide={nextSlide} dirction="next" />
-            <BtnSlider moveSlide={backSlide} dirction="back" /> */}
+            <BtnSlider moveSlide={nextSlide} dirction="next" />
+            <BtnSlider moveSlide={backSlide} dirction="back" />
 
             <div className="dots">
                 {Array.from({ length: imgs.length }).map((_, idx) => (
