@@ -180,47 +180,47 @@ const contacts = [
 const studyMaterialDevelopmentStack = [
     {
         name: "HTML",
-        color: "#e34c26",
+        bg: ""
     },
     {
         name: "CSS",
-        color: "#264de4"
+        bg: ""
     },
     {
         name: "JavaScript",
-        color: "#f0db4f"
+        bg: ""
     },
     {
         name: "React Js",
-        color: "#00d8ff"
+        bg: ""
     },
     {
         name: "Apollo Client",
-        color: "gray"
+        bg: ""
     },
     {
         name: "Material-UI",
-        color: "#5A9DE1"
+        bg: ""
     },
     {
         name: "Node Js",
-        color: "#3c873a"
+        bg: ""
     },
     {
         name: "Express Js",
-        color: ""
+        bg: ""
     },
     {
         name: "GraphQl",
-        color: "#e535ab"
+        bg: ""
     },
     {
         name: "MongoDB",
-        color: "#589636"
+        bg: ""
     },
     {
         name: "JWT Authorization",
-        color: ""
+        bg: ""
     },
 ];
 
@@ -242,6 +242,7 @@ const ascoDevelopmentStack = [
     },
     {
         name: "Jest",
+        bg: ""
     },
     {
         name: "Webpack"
@@ -251,66 +252,66 @@ const ascoDevelopmentStack = [
 const pizzaHouseDevelopmentStack = [
     {
         name: "HTML",
-        color: "#e34c26",
+        bg: ""
     },
     {
         name: "SCSS",
-        color: "#264de4"
+        bg: ""
     },
     {
         name: "JavaScript",
-        color: "#f0db4f"
+        bg: ""
     },
     {
         name: "Next Js",
-        color: "#00d8ff"
+        bg: ""
     },
     {
         name: "NextAuth",
-        color: "#00d8ff"
+        bg: ""
     },
     {
         name: "MongoDB",
-        color: "#589636"
+        bg: ""
     },
 ];
 
 const promotionSystemDevelopmentStack = [
     {
         name: "HTML",
-        color: "#e34c26",
+        bg: ""
     },
     {
         name: "CSS",
-        color: "#264de4"
+        bg: ""
     },
     {
         name: "JavaScript",
-        color: "#f0db4f"
+        bg: ""
     },
     {
         name: "React Js",
-        color: "#00d8ff"
+        bg: ""
     },
     {
         name: "Redux",
-        color: ""
+        bg: ""
     },
     {
         name: "Node Js",
-        color: "#3c873a"
+        bg: ""
     },
     {
         name: "Express Js",
-        color: ""
+        bg: ""
     },
     {
         name: "MongoDB",
-        color: "#589636"
+        bg: ""
     },
     {
         name: "JWT Authorization",
-        color: ""
+        bg: ""
     },
 ]
 
@@ -326,7 +327,6 @@ const projects = [
             "/images/asco-2.png",
             "/images/asco-3.png"
         ],
-        direction: "right",
         liveSiteLink: "https://ascopubs.org/",
     },
     {
@@ -339,7 +339,6 @@ const projects = [
             "https://res.cloudinary.com/pic-gallary/image/upload/v1640883390/my-portofolio/%D9%A2%D9%A0%D9%A2%D9%A1%D9%A1%D9%A2%D9%A3%D9%A0_%D9%A1%D9%A8%D9%A5%D9%A5%D9%A2%D9%A7_bnhhkz.jpg",
             "https://res.cloudinary.com/pic-gallary/image/upload/v1642161636/my-portofolio/Screenshot_309_f8svfa.png"
         ],
-        direction: "right",
         projectCodeLink: "https://github.com/yazan-ali/promotion-system-my-graduation-project"
     },
     {
@@ -353,7 +352,6 @@ const projects = [
             "https://res.cloudinary.com/pic-gallary/image/upload/v1653730612/my-portofolio/28.05.2022_12.33.23_REC_ydlsuw.png",
             "https://res.cloudinary.com/pic-gallary/image/upload/v1653730617/my-portofolio/28.05.2022_12.34.42_REC_kav1wt.png"
         ],
-        direction: "left",
         liveSiteLink: "https://pizza-house.vercel.app",
         projectCodeLink: "https://github.com/yazan-ali/next-js-restaurant-app"
     },
@@ -369,7 +367,6 @@ const projects = [
             "https://res.cloudinary.com/pic-gallary/image/upload/v1640880476/my-portofolio/%D9%A2%D9%A0%D9%A2%D9%A1%D9%A1%D9%A2%D9%A3%D9%A0_%D9%A1%D9%A8%D9%A0%D9%A5%D9%A2%D9%A6_jtvewu.jpg",
             "https://res.cloudinary.com/pic-gallary/image/upload/v1640880476/my-portofolio/%D9%A2%D9%A0%D9%A2%D9%A1%D9%A1%D9%A2%D9%A3%D9%A0_%D9%A1%D9%A8%D9%A0%D9%A5%D9%A1%D9%A0_q8c4em.jpg",
         ],
-        direction: "left",
         liveSiteLink: "https://inspiring-babbage-e50db6.netlify.app/",
         projectCodeLink: "https://github.com/yazan-ali/study-material-client"
     },

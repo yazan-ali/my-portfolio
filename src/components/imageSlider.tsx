@@ -4,7 +4,7 @@ import Image from 'next/image';
 import BtnSlider from './btnSlider';
 import '@/styles/imageSlider.scss';
 
-function ImageSlider({ imgs }) {
+function ImageSlider({ imgs }: { imgs: string[] }) {
 
     const [slideIndex, setSlideIndex] = useState(1);
 
@@ -37,8 +37,8 @@ function ImageSlider({ imgs }) {
                     </div>
                 ))
             }
-            <BtnSlider moveSlide={nextSlide} dirction="next" />
-            <BtnSlider moveSlide={backSlide} dirction="back" />
+            <BtnSlider moveSlide={nextSlide} direction="next" />
+            <BtnSlider moveSlide={backSlide} direction="back" />
 
             <div className="dots">
                 {Array.from({ length: imgs.length }).map((_, idx) => (

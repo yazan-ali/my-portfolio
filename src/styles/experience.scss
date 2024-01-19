@@ -3,6 +3,7 @@
 .experience {
     .experience-card {
         &__company-logo {
+            position: relative;
             width: toRem(100);
             height: toRem(100);
             background: transparent;
@@ -13,15 +14,38 @@
             border-radius: 50%;
         }
 
+        &__company-logo-overlay {
+            position: absolute;
+            top: -1rem;
+            left: -1rem;
+            background: #fff;
+            border-radius: 50%;
+            box-sizing: content-box;
+            padding: 1rem;
+            width: 100%;
+            height: 100%;
+        }
+
         &__progress-bar {
+            position: relative;
             height: toRem(300);
             border-left: toRem(10) solid transparent;
             border-image: linear-gradient(#4b45bd, #4cb3d0);
             border-image-slice: 1;
+            margin-top: -0.5px;
 
             @include media("md") {
                 height: toRem(250);
             }
+        }
+
+        &__progress-bar-overlay {
+            position: absolute;
+            background: #fff;
+            width: toRem(10);
+            height: 100%;
+            left: toRem(-10);
+            overflow: hidden;
         }
 
         &__details {
@@ -29,6 +53,7 @@
             background: $bg-primary;
             padding: 1rem;
             border-radius: toRem(10);
+            z-index: 2;
         }
 
         &__inprogress {
@@ -40,7 +65,9 @@
             background-origin: border-box;
             border: toRem(8) solid transparent;
             border-radius: 50%;
-            margin-left: toRem(30);
+            margin-left: toRem(33);
+            position: static;
+            z-index: 1;
 
             @include media("md") {
                 margin-left: 0;

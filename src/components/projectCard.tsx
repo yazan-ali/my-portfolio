@@ -2,8 +2,24 @@ import DevelopmentStackItem from '@/components/developmentStackItem';
 import ImageSlider from '@/components/imageSlider';
 import '@/styles/projects.scss';
 
+type projectProps = {
+    data: {
+        projectName: string,
+        developmentStack: developmentStack[],
+        projectsDiscription: string,
+        projectImgs: string[],
+        backgroundColor: string,
+        liveSiteLink?: string,
+        projectCodeLink?: string,
+    }
+}
 
-function ProjectCard(props) {
+type developmentStack = {
+    name: string,
+    bg?: string,
+}
+
+function ProjectCard(props: projectProps) {
     const { projectName, developmentStack, projectsDiscription, projectImgs, backgroundColor, liveSiteLink, projectCodeLink } = props.data;
 
     return (

@@ -1,11 +1,28 @@
 "use client"
-import { useState } from 'react';
+import React, { useState } from 'react';
 import ProjectCard from './projectCard';
 import { projects } from "@/data";
-import move from "lodash-move";
+import { move } from "lodash-move";
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import '@/styles/projects.scss';
+
+type projectProps = {
+    data: {
+        projectName: string,
+        developmentStack: developmentStack[],
+        projectsDiscription: string,
+        projectImgs: string[],
+        backgroundColor: string,
+        liveSiteLink?: string,
+        projectCodeLink?: string,
+    }
+}
+
+type developmentStack = {
+    name: string,
+    bg?: string,
+}
 
 export default function Projects() {
 
@@ -13,7 +30,7 @@ export default function Projects() {
     const SCALE_FACTOR = 0.06;
     const { ref, inView } = useInView({
         threshold: 0.2,
-        rootMargin: "200px"
+        rootMargin: "200px 0px 0px 0px"
     });
 
     const projectsCards = projects.map((project, idx) => {
@@ -21,7 +38,7 @@ export default function Projects() {
     });
 
     const [cards, setCards] = useState(projectsCards);
-    const moveToEnd = from => {
+    const moveToEnd = (from: number) => {
         setCards(move(cards, from, cards.length - 1));
     };
 
@@ -31,7 +48,7 @@ export default function Projects() {
                 <h2 className='styled-heading styled-border text-2xl font-bold mt-4'>My Works</h2>
                 <div className="projects__stacked-cards relative w-full mt-24">
                     {
-                        cards.map((card, idx) => {
+                        React.Children.toArray(cards.map((card, idx) => {
                             const canDrag = idx === 0;
                             return <motion.div
                                 ref={ref}
@@ -55,7 +72,7 @@ export default function Projects() {
                                 {card}
                             </motion.div>
                         }
-                        )}
+                        ))}
                 </div>
             </div>
         </section>

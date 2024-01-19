@@ -1,35 +1,32 @@
 "use client"
-import { useRef, useState, useEffect } from 'react';
+import React, { FormEvent, useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import '@/styles/emailForm.scss';
 
 function EmailForm() {
 
-    useEffect(() => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, [])
+    const form = React.createRef<HTMLFormElement>();
 
-    const form = useRef();
+    const [alert, setAlert] = useState({ success: false, message: "" });
 
-    const [alert, setAlert] = useState(null);
-
-    const sendEmail = (e) => {
+    const sendEmail = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-
-        emailjs.sendForm("service_45he3qp", 'template_9qwhpjr', form.current, 'user_auNJsV3PDr7FaeOTFIm72')
-            .then((result) => {
-                setAlert({
-                    success: true,
-                    message: "The email was sent successfully"
-                })
-                form.current.reset()
-            }, (error) => {
-                console.log(error)
-                setAlert({
-                    success: false,
-                    message: "An error occurred while sending the email"
-                })
-            });
+        if (form.current) {
+            emailjs.sendForm("service_45he3qp", 'template_9qwhpjr', form.current, 'user_auNJsV3PDr7FaeOTFIm72')
+                .then((result) => {
+                    setAlert({
+                        success: true,
+                        message: "The email was sent successfully"
+                    });
+                    form.current && (form.current as HTMLFormElement).reset();
+                }, (error) => {
+                    console.log(error)
+                    setAlert({
+                        success: false,
+                        message: "An error occurred while sending the email"
+                    })
+                });
+        }
     };
 
     return (

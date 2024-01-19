@@ -3,10 +3,23 @@ import Image from 'next/image';
 import { motion, Variants } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
-export default function Skill({ skillName, skillLogo, color, skillLogoWidth }) {
+type skillProps = {
+    skillName: string,
+    skillLogo: {
+        img: boolean,
+        logo: string
+    } | IconProp,
+    color: string,
+    skillLogoWidth: number | undefined,
+}
 
+export default function Skill(props: skillProps) {
+
+    const { skillName, skillLogo, color, skillLogoWidth } = props;
     const { ref, inView } = useInView();
+
     const itemVariants: Variants = {
         inView: {
             y: "0",
@@ -32,10 +45,14 @@ export default function Skill({ skillName, skillLogo, color, skillLogoWidth }) {
                 style={{ backgroundImage: `linear-gradient(45deg, #fff, ${color})` }}
             ></div>
             {
-                skillLogo.img ?
-                    <Image style={{ borderRadius: 10, width: skillLogoWidth }} width={skillLogoWidth} height={skillLogoWidth} src={skillLogo.logo} alt={skillName} />
+                typeof skillLogo === "object" && 'img' in skillLogo ?
+                    <Image
+                        style={{ borderRadius: 10, width: skillLogoWidth }}
+                        width={skillLogoWidth} height={skillLogoWidth}
+                        src={skillLogo.logo} alt={skillName}
+                    />
                     :
-                    <FontAwesomeIcon icon={skillLogo} className="w-32" color={color} />
+                    <FontAwesomeIcon icon={skillLogo as IconProp} className="w-32" color={color} />
 
             }
             <span className='font-bold mt-auto text-center' style={{ color: color }}>{skillName}</span>

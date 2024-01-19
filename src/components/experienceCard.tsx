@@ -4,7 +4,18 @@ import { motion, Variants } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import '@/styles/experience.scss';
 
-export default function ExperienceCard(props) {
+type ExperienceProps = {
+    position: string,
+    company: string,
+    companyLogo: string,
+    startDate: string,
+    endDate?: string,
+    description: string,
+    leftSide: boolean,
+    isLast: boolean,
+}
+
+export default function ExperienceCard(props: ExperienceProps) {
     const { position, company, companyLogo, startDate, endDate, description, leftSide, isLast } = props;
     const { ref, inView } = useInView();
     const detailsVariants: Variants = {
@@ -21,15 +32,28 @@ export default function ExperienceCard(props) {
         }
     };
 
-    const progressBarVariants: Variants = {
+    const logoVariants: Variants = {
         inView: {
-            height: "300px",
+            transform: "translateY(100%)",
             transition: {
                 type: "spring", duration: 1.5, bounce: 0
             },
         },
         outView: {
-            height: 0
+            transform: "translateY(0)",
+        }
+    };
+
+    const progressBarVariants: Variants = {
+        inView: {
+            transform: "translateY(100%)",
+            transition: {
+                type: "spring", duration: 1.5, bounce: 0,
+                delay: 0.6
+            },
+        },
+        outView: {
+            transform: "translateY(0)",
         }
     };
 
@@ -38,6 +62,11 @@ export default function ExperienceCard(props) {
         >
             <div className="experience-card__company-logo">
                 <Image className="experience-card__company-logo-img p-2" width="100" height="100" src={companyLogo} alt={company} loading='lazy' />
+                <motion.div className="experience-card__company-logo-overlay"
+                    initial={{ transform: "translateY(0)" }}
+                    animate={inView ? "inView" : "outView"}
+                    variants={logoVariants}
+                ></motion.div>
             </div>
             <motion.div
                 className={`experience-card__details md:w-1/2 absolute mt-24 ml-16 md:ml-0
@@ -55,13 +84,13 @@ export default function ExperienceCard(props) {
                 </div>
                 <p className="font-medium">{description}</p>
             </motion.div>
-            <motion.div className="experience-card__progress-bar ml-10 md:ml-0 -mt-1"
-            // initial={{ height: 0 }}
-            // animate={inView ? "inView" : "outView"}
-            // variants={progressBarVariants}
-            >
-
-            </motion.div>
+            <div className="experience-card__progress-bar ml-11 md:ml-0">
+                <motion.div className="experience-card__progress-bar-overlay"
+                    initial={{ transform: "translateY(0)" }}
+                    animate={inView ? "inView" : "outView"}
+                    variants={progressBarVariants}
+                ></motion.div>
+            </div>
             {isLast && <div className='experience-card__inprogress -mt-1'></div>}
         </div>
     )
