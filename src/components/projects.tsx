@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import ProjectCard from './projectCard';
 import { projects } from "@/data";
-import { move } from "lodash-move";
+import move from "lodash-move";
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import '@/styles/projects.scss';
