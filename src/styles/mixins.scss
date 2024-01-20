@@ -1,14 +1,33 @@
 @use "sass:map";
 
 @mixin media($breakpoint) {
-    @if $breakpoint =="md" {
+
+    @if $breakpoint =="xs" {
+        @media (min-width: 320px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint =="sm" {
+        @media (min-width: 460px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint =="md" {
         @media (min-width: 768px) {
             @content;
         }
     }
 
-    @if $breakpoint =="lg" {
+    @else if $breakpoint =="lg" {
         @media (min-width: 1024px) {
+            @content;
+        }
+    }
+
+    @else {
+        @media (min-width: $breakpoint) {
             @content;
         }
     }

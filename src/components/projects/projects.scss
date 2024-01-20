@@ -1,30 +1,58 @@
 @import "../../styles/helpers.scss";
 
 .projects__stacked-cards {
-    // height: toRem(850);
 
-    @include media("lg") {
-        height: toRem(450) !important;
-    }
+    // height: toRem(850);
+    // @include media("lg") {
+    height: toRem(450) !important;
+    // }
+}
+
+.projects__stacked-card {
+
+    max-height: toRem(480);
+    overflow-y: auto;
 }
 
 .project-1 {
-    height: toRem(800);
+    // height: 850px !important;
 
-    @include media("md") {
-        height: toRem(1000);
+    // @include media("xs") {
+    //     height: 800px !important;
+    // }
 
-    }
+    // @include media("sm") {
+    //     height: 750px !important;
+    // }
 
+    // @include media("md") {
+    //     height: 480px !important;
+
+    // }
+
+    // @include media("lg") {
+    //     height: toRem(450) !important;
+    // }
 }
 
 .project-2 {
-    height: toRem(800);
+    // height: 1080px;
 
-    @include media("md") {
-        height: toRem(1000);
+    // @include media("xs") {
+    //     height: 1050px;
+    // }
 
-    }
+    // @include media("sm") {
+    //     height: 850px;
+    // }
+
+    // @include media("md") {
+    //     height: 650px;
+    // }
+
+    // @include media("lg") {
+    //     height: toRem(450) !important;
+    // }
 }
 
 .project-3 {
