@@ -11,6 +11,14 @@
         height: toRem(850) !important;
     }
 
+    @include media("500px") {
+        height: toRem(800) !important;
+    }
+
+    @include media("700px") {
+        height: toRem(720) !important;
+    }
+
     @include media("md") {
         height: toRem(650) !important;
     }
@@ -19,90 +27,12 @@
         height: toRem(580) !important;
     }
 
-    @include media("1250px") {
-        height: toRem(530) !important;
+    @include media("1200px") {
+        height: toRem(500) !important;
     }
 }
 
-.projects__stacked-card {
-
-    // max-height: toRem(480);
-    // overflow-y: auto;
-}
-
-.project-1 {
-    // height: 850px !important;
-
-    // @include media("xs") {
-    //     height: 800px !important;
-    // }
-
-    // @include media("sm") {
-    //     height: 750px !important;
-    // }
-
-    // @include media("md") {
-    //     height: 480px !important;
-
-    // }
-
-    // @include media("lg") {
-    //     height: toRem(450) !important;
-    // }
-}
-
-.project-2 {
-    // height: 1080px;
-
-    // @include media("xs") {
-    //     height: 1050px;
-    // }
-
-    // @include media("sm") {
-    //     height: 850px;
-    // }
-
-    // @include media("md") {
-    //     height: 650px;
-    // }
-
-    // @include media("lg") {
-    //     height: toRem(450) !important;
-    // }
-}
-
-// .project-3 {
-//     height: toRem(800);
-
-//     @include media("md") {
-//         height: toRem(1000);
-
-//     }
-// }
-
-// .project-4 {
-//     height: toRem(800);
-
-//     @include media("md") {
-//         height: toRem(1000);
-
-//     }
-// }
-
-// .projects__stacked-card {
-
-//     @include media("md") {
-//         height: toRem(550) !important;
-//     }
-
-//     @include media("lg") {
-//         height: toRem(450) !important;
-//     }
-// }
-
 .project-card {
-    // width: 100%;
-    // height: 100%;
     border-radius: toRem(10);
     color: #fff;
 }
@@ -110,103 +40,10 @@
 .development-stack-name {
     color: #fff;
     border-radius: 5px;
-    // color: #0f0c29;
-    // background-color: #fff;
-    // font-weight: 600;
-    // font-size: 17px;
-    // padding: 10px;
-    // margin-top: 10px;
-    // margin-left: 5px;
 }
-
-// .projects {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: flex-start;
-//     padding-top: 50px;
-
-//     h2 {
-//         color: #fff;
-//     }
-
-//     hr {
-//         width: 50%;
-//         background-color: #fff;
-//         margin-bottom: 20px;
-//     }
-// }
-
-// .project-card {
-//     width: 95%;
-//     border-radius: 10px;
-//     margin-bottom: 50px;
-
-//     h2,
-//     p {
-//         color: #fff;
-//         text-align: start;
-//     }
-
-//     @include media("md") {
-//         width: 100%;
-//         border-radius: 0;
-//     }
-// }
-
-// .project-card {
-//     width: 100%;
-//     display: flex;
-//     justify-content: space-between;
-//     padding: 30px;
-
-//     .slide {
-//         width: 100%;
-//         max-height: 400px;
-//         border-radius: 10px;
-//     }
-
-//     .project-info {
-//         width: 50%;
-//         font-size: 20px;
-//         font-weight: 600;
-//     }
-
-//     .project-img-slider {
-//         width: 45%;
-//     }
-
-//     hr {
-//         margin-top: 20px;
-//     }
-
-//     @include media("md") {
-//         flex-direction: column;
-
-//         .project-card__img-slider {
-//             width: 100%;
-//             margin-bottom: 15px;
-//         }
-
-//         .project-card__info {
-//             width: 100%;
-//         }
-//     }
-// }
-
-// .development-stack-name {
-//     color: #0f0c29;
-//     background-color: #fff;
-//     font-weight: 600;
-//     font-size: 17px;
-//     padding: 10px;
-//     border-radius: 5px;
-//     margin-top: 10px;
-//     margin-left: 5px;
-// }
 
 .project-card__links {
     border-top: toRem(2) solid;
-    // border-color: rgba(red, 0.2) !important;
 
     a {
         margin-top: toRem(12);
