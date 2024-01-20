@@ -5,16 +5,6 @@ import { useInView } from 'react-intersection-observer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
-type skillProps = {
-    skillName: string,
-    skillLogo: {
-        img: boolean,
-        logo: string
-    } | IconProp,
-    color: string,
-    skillLogoWidth: number | undefined,
-}
-
 export default function Skill(props: skillProps) {
 
     const { skillName, skillLogo, color, skillLogoWidth } = props;
@@ -22,14 +12,14 @@ export default function Skill(props: skillProps) {
 
     const itemVariants: Variants = {
         inView: {
-            y: "0",
+            x: "0",
             opacity: 1,
             transition: {
-                type: "spring", duration: 3, bounce: 0.4
-            },
+                type: "spring", duration: 3, bounce: 0.4,
+            }
         },
         outView: {
-            y: "-50%",
+            x: "-100%",
             opacity: 0,
         }
     };
@@ -37,7 +27,7 @@ export default function Skill(props: skillProps) {
     return (
         <motion.div className="skill flex flex-col items-center rounded-md h-36 py-4"
             animate={inView ? "inView" : "outView"}
-            initial={{ y: "-50%", opacity: 0 }}
+            initial={{ x: "-100%", opacity: 0 }}
             ref={ref}
             variants={itemVariants}
         >
@@ -52,7 +42,7 @@ export default function Skill(props: skillProps) {
                         src={skillLogo.logo} alt={skillName}
                     />
                     :
-                    <FontAwesomeIcon icon={skillLogo as IconProp} className="w-32" color={color} />
+                    <FontAwesomeIcon icon={skillLogo as IconProp} className="text-8xl" color={color} />
 
             }
             <span className='font-bold mt-auto text-center' style={{ color: color }}>{skillName}</span>

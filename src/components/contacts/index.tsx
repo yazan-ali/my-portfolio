@@ -1,5 +1,5 @@
 import React from 'react';
-import "@/styles/contacts.scss";
+import "./contacts.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { contacts } from "@/data";
 export default function Contacts() {
@@ -10,8 +10,8 @@ export default function Contacts() {
                     {
                         React.Children.toArray(contacts.map(contact => (
                             <a href={contact.link} className="flex items-center w-28 mt-3" target="_blank">
-                                <FontAwesomeIcon icon={contact.icon} className="w-6" color={contact.color} />
-                                <span className="font-medium ml-3">{contact.contactType}</span>
+                                <FontAwesomeIcon icon={contact.icon} className="contacts__item text-3xl w-8" color={contact.color} />
+                                <span className="font-medium ml-4">{contact.contactType}</span>
                             </a>
                         )))}
                 </li>

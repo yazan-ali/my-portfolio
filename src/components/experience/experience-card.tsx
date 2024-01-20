@@ -2,18 +2,7 @@
 import Image from 'next/image';
 import { motion, Variants } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
-import '@/styles/experience.scss';
-
-type ExperienceProps = {
-    position: string,
-    company: string,
-    companyLogo: string,
-    startDate: string,
-    endDate?: string,
-    description: string,
-    leftSide: boolean,
-    isLast: boolean,
-}
+import './experience.scss';
 
 export default function ExperienceCard(props: ExperienceProps) {
     const { position, company, companyLogo, startDate, endDate, description, leftSide, isLast } = props;
@@ -23,7 +12,8 @@ export default function ExperienceCard(props: ExperienceProps) {
             x: 0,
             opacity: 1,
             transition: {
-                type: "spring", duration: 1.5, bounce: 0
+                type: "spring", duration: 1.5, bounce: 0,
+                delay: 0.3
             },
         },
         outView: {

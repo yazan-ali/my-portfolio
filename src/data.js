@@ -321,13 +321,13 @@ const projects = [
         developmentStack: ascoDevelopmentStack,
         projectsDiscription: "A website for American Society of Clinical Oncology publcations, where the users can navigate different journals, list of issues, table of contents and read many articles, I worked on the front-end part using:",
         backgroundColor: "#002557",
-
         projectImgs: [
             "/images/asco-1.png",
             "/images/asco-2.png",
             "/images/asco-3.png"
         ],
         liveSiteLink: "https://ascopubs.org/",
+        calssName: "project-1"
     },
     {
         projectName: "My Graduation Project",
@@ -339,7 +339,8 @@ const projects = [
             "https://res.cloudinary.com/pic-gallary/image/upload/v1640883390/my-portofolio/%D9%A2%D9%A0%D9%A2%D9%A1%D9%A1%D9%A2%D9%A3%D9%A0_%D9%A1%D9%A8%D9%A5%D9%A5%D9%A2%D9%A7_bnhhkz.jpg",
             "https://res.cloudinary.com/pic-gallary/image/upload/v1642161636/my-portofolio/Screenshot_309_f8svfa.png"
         ],
-        projectCodeLink: "https://github.com/yazan-ali/promotion-system-my-graduation-project"
+        projectCodeLink: "https://github.com/yazan-ali/promotion-system-my-graduation-project",
+        calssName: "project-2"
     },
     {
         projectName: "Next Js App",
@@ -353,14 +354,14 @@ const projects = [
             "https://res.cloudinary.com/pic-gallary/image/upload/v1653730617/my-portofolio/28.05.2022_12.34.42_REC_kav1wt.png"
         ],
         liveSiteLink: "https://pizza-house.vercel.app",
-        projectCodeLink: "https://github.com/yazan-ali/next-js-restaurant-app"
+        projectCodeLink: "https://github.com/yazan-ali/next-js-restaurant-app",
+        calssName: "project-3"
     },
     {
         projectName: "Study Material",
         developmentStack: studyMaterialDevelopmentStack,
         projectsDiscription: "A full stack website it's help student to find a lot of what they need for study they can create, solve quizizz, upload, download files or search by course name to find quizizz or files for specific course or search for specific student to see his/her profile also student can create posts to ask questions. this website developed using :",
         backgroundColor: "#4A156B",
-
         projectImgs: [
             "https://res.cloudinary.com/pic-gallary/image/upload/v1625051690/my-portofolio/std_img1_ldkcwe.jpg",
             "https://res.cloudinary.com/pic-gallary/image/upload/v1625051692/my-portofolio/std_img2_j8bkmr.jpg",
@@ -368,7 +369,8 @@ const projects = [
             "https://res.cloudinary.com/pic-gallary/image/upload/v1640880476/my-portofolio/%D9%A2%D9%A0%D9%A2%D9%A1%D9%A1%D9%A2%D9%A3%D9%A0_%D9%A1%D9%A8%D9%A0%D9%A5%D9%A1%D9%A0_q8c4em.jpg",
         ],
         liveSiteLink: "https://inspiring-babbage-e50db6.netlify.app/",
-        projectCodeLink: "https://github.com/yazan-ali/study-material-client"
+        projectCodeLink: "https://github.com/yazan-ali/study-material-client",
+        calssName: "project-4"
     },
 ];
 

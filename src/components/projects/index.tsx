@@ -1,28 +1,11 @@
 "use client"
 import React, { useState } from 'react';
-import ProjectCard from './projectCard';
+import ProjectCard from './project-card';
 import { projects } from "@/data";
 import move from "lodash-move";
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
-import '@/styles/projects.scss';
-
-type projectProps = {
-    data: {
-        projectName: string,
-        developmentStack: developmentStack[],
-        projectsDiscription: string,
-        projectImgs: string[],
-        backgroundColor: string,
-        liveSiteLink?: string,
-        projectCodeLink?: string,
-    }
-}
-
-type developmentStack = {
-    name: string,
-    bg?: string,
-}
+import './projects.scss';
 
 export default function Projects() {
 
@@ -34,7 +17,10 @@ export default function Projects() {
     });
 
     const projectsCards = projects.map((project, idx) => {
-        return <ProjectCard key={idx} data={project} />
+        return {
+            component: <ProjectCard key={idx} data={project} />,
+            calssName: project.calssName
+        }
     });
 
     const [cards, setCards] = useState(projectsCards);
@@ -46,13 +32,15 @@ export default function Projects() {
         <section id="projects" className="projects mt-8">
             <div className="container flex flex-col justify-center items-center gap-6 lg:w-4/5">
                 <h2 className='styled-heading styled-border text-2xl font-bold mt-4'>My Works</h2>
-                <div className="projects__stacked-cards relative w-full mt-24">
+                <div
+                    className={`projects__stacked-cards relative w-full mt-16 md:mt-24 ${cards[0].calssName}`}
+                >
                     {
                         React.Children.toArray(cards.map((card, idx) => {
                             const canDrag = idx === 0;
                             return <motion.div
                                 ref={ref}
-                                className="absolute"
+                                className="projects__stacked-card absolute"
                                 style={{ height: canDrag ? "auto" : "500px" }}
                                 animate={{
                                     top: inView ? idx * -CARD_OFFSET : 0,
@@ -69,7 +57,7 @@ export default function Projects() {
                                 }}
                                 onDragEnd={() => moveToEnd(idx)}
                             >
-                                {card}
+                                {card.component}
                             </motion.div>
                         }
                         ))}

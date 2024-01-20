@@ -1,8 +1,8 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
-import BtnSlider from './btnSlider';
-import '@/styles/imageSlider.scss';
+import BtnSlider from './img-slider-btn';
+import './image-slider.scss';
 
 function ImageSlider({ imgs }: { imgs: string[] }) {
 

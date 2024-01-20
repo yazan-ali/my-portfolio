@@ -1,4 +1,5 @@
-@import "./helpers.scss";
+@use "sass:map";
+@import "../../styles/helpers.scss";
 
 .experience {
     .experience-card {
@@ -53,7 +54,7 @@
             background: $bg-primary;
             padding: 1rem;
             border-radius: toRem(10);
-            z-index: 2;
+            z-index: map.get($z-index, "experience-card-details");
         }
 
         &__inprogress {
@@ -67,7 +68,7 @@
             border-radius: 50%;
             margin-left: toRem(33);
             position: static;
-            z-index: 1;
+            z-index: map.get($z-index, "experience-card-inprogress");
 
             @include media("md") {
                 margin-left: 0;

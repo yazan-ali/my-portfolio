@@ -1,11 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import '@/styles/imageSlider.scss';
-
-type BtnSliderProps = {
-    direction: string,
-    moveSlide: () => void
-}
+import './image-slider.scss';
 
 function BtnSlider(props: BtnSliderProps) {
     const { direction, moveSlide } = props;

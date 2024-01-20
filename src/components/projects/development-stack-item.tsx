@@ -1,9 +1,4 @@
-import '@/styles/projects.scss';
-
-type developmentStack = {
-    name: string,
-    bg: string,
-}
+import './projects.scss';
 
 export default function DevelopmentStackItem({ name, bg }: developmentStack) {
     return (

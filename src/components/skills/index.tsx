@@ -1,6 +1,6 @@
-import Skill from "@/components/skillCard";
+import Skill from "@/components/skills/skill-card";
 import { skills } from '@/data';
-import "@/styles/skills.scss";
+import "./skills.scss";
 
 export default function Skills() {
     return (

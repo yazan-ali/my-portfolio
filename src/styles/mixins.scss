@@ -1,6 +1,14 @@
+@use "sass:map";
+
 @mixin media($breakpoint) {
     @if $breakpoint =="md" {
         @media (min-width: 768px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint =="lg" {
+        @media (min-width: 1024px) {
             @content;
         }
     }
@@ -9,7 +17,7 @@
 @mixin slice($place, $background: #4b45bd) {
     content: "";
     position: absolute;
-    z-index: -1;
+    z-index: map.get($z-index, "slice");
     width: toRem(200);
     height: toRem(200);
     background: $background;

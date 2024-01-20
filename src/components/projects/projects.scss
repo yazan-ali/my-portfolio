@@ -1,12 +1,60 @@
-@import "./helpers.scss";
+@import "../../styles/helpers.scss";
 
 .projects__stacked-cards {
-    height: toRem(850);
+    // height: toRem(850);
 
-    @include media("md") {
-        height: toRem(450);
+    @include media("lg") {
+        height: toRem(450) !important;
     }
 }
+
+.project-1 {
+    height: toRem(800);
+
+    @include media("md") {
+        height: toRem(1000);
+
+    }
+
+}
+
+.project-2 {
+    height: toRem(800);
+
+    @include media("md") {
+        height: toRem(1000);
+
+    }
+}
+
+.project-3 {
+    height: toRem(800);
+
+    @include media("md") {
+        height: toRem(1000);
+
+    }
+}
+
+.project-4 {
+    height: toRem(800);
+
+    @include media("md") {
+        height: toRem(1000);
+
+    }
+}
+
+// .projects__stacked-card {
+
+//     @include media("md") {
+//         height: toRem(550) !important;
+//     }
+
+//     @include media("lg") {
+//         height: toRem(450) !important;
+//     }
+// }
 
 .project-card {
     // width: 100%;

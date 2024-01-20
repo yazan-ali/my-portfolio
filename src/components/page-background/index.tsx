@@ -1,3 +1,5 @@
+import "./page-background.scss";
+
 export default function PageBG() {
   return (
     <div className="page-bg">

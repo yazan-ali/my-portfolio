@@ -1,23 +1,6 @@
-import DevelopmentStackItem from '@/components/developmentStackItem';
-import ImageSlider from '@/components/imageSlider';
-import '@/styles/projects.scss';
-
-type projectProps = {
-    data: {
-        projectName: string,
-        developmentStack: developmentStack[],
-        projectsDiscription: string,
-        projectImgs: string[],
-        backgroundColor: string,
-        liveSiteLink?: string,
-        projectCodeLink?: string,
-    }
-}
-
-type developmentStack = {
-    name: string,
-    bg?: string,
-}
+import DevelopmentStackItem from '@/components/projects/development-stack-item';
+import ImageSlider from '@/components/image-slider';
+import './projects.scss';
 
 function ProjectCard(props: projectProps) {
     const { projectName, developmentStack, projectsDiscription, projectImgs, backgroundColor, liveSiteLink, projectCodeLink } = props.data;
@@ -33,7 +16,7 @@ function ProjectCard(props: projectProps) {
                 <ImageSlider imgs={projectImgs} />
             </div>
             <div className="project-card__info h-full md:w-1/2">
-                <p className='text-2xl'>{projectName}</p>
+                <p className='text-2xl mt-4'>{projectName}</p>
                 <p>
                     {projectsDiscription}
                 </p>
