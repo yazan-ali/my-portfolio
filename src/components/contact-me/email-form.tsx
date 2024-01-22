@@ -42,7 +42,7 @@ function EmailForm() {
                 </div>
                 <input type="text" name="subject" placeholder="Subject" className="email-form__input" required />
                 <textarea name="message" rows={6} placeholder="Message" className="email-form__input" required />
-                {alert && <p style={{ color: alert.success ? "green" : "red" }}>{alert.message}</p>}
+                {alert?.message && <p style={{ color: alert.success ? "green" : "red" }}>{alert.message}</p>}
                 <button className='email-form__btn p-4 font-bold' type="submit">Send</button>
             </div>
         </form>

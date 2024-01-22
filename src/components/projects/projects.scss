@@ -1,3 +1,4 @@
+@use "sass:map";
 @import "../../styles/helpers.scss";
 
 .projects__stacked-cards {
@@ -29,6 +30,38 @@
 
     @include media("1200px") {
         height: toRem(500) !important;
+    }
+
+    @include media("md") {
+
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+
+    &:before {
+        content: "";
+        background: transparent;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        z-index: map.get($z-index, "stacked-cards-nav-area");
+        touch-action: none;
+    }
+
+    &::after {
+        content: "";
+        background: transparent;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 50px;
+        z-index: map.get($z-index, "stacked-cards-nav-area");
+        touch-action: none;
     }
 }
 
