@@ -14,7 +14,7 @@ export default function Navbar() {
                         <FontAwesomeIcon className="nav-toggle__cross hidden  text-2xl" icon={faXmark} />
                     </label>
                 </div>
-                <ul className="nav md:flex px-4 md:px-0">
+                <ul className="nav md:flex overflow-hidden px-4 md:px-0">
                     <li className="py-2 md:py-0 md:px-3">
                         <a href="#about-me">About Me</a>
                     </li>
