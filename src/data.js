@@ -327,7 +327,6 @@ const projects = [
             "/images/asco-3.png"
         ],
         liveSiteLink: "https://ascopubs.org/",
-        calssName: "project-1"
     },
     {
         projectName: "My Graduation Project",
@@ -340,7 +339,6 @@ const projects = [
             "https://res.cloudinary.com/pic-gallary/image/upload/v1642161636/my-portofolio/Screenshot_309_f8svfa.png"
         ],
         projectCodeLink: "https://github.com/yazan-ali/promotion-system-my-graduation-project",
-        calssName: "project-2"
     },
     {
         projectName: "Next Js App",
@@ -355,7 +353,6 @@ const projects = [
         ],
         liveSiteLink: "https://pizza-house.vercel.app",
         projectCodeLink: "https://github.com/yazan-ali/next-js-restaurant-app",
-        calssName: "project-3"
     },
     {
         projectName: "Study Material",
@@ -370,7 +367,6 @@ const projects = [
         ],
         liveSiteLink: "https://inspiring-babbage-e50db6.netlify.app/",
         projectCodeLink: "https://github.com/yazan-ali/study-material-client",
-        calssName: "project-4"
     },
 ];
 

@@ -19,7 +19,6 @@ export default function Projects() {
     const projectsCards = projects.map((project, idx) => {
         return {
             component: <ProjectCard key={idx} data={project} />,
-            calssName: project.calssName
         }
     });
 
@@ -33,7 +32,7 @@ export default function Projects() {
             <div className="container flex flex-col justify-center items-center gap-6 lg:w-4/5">
                 <h2 className='styled-heading styled-border text-2xl font-bold mt-4'>My Works</h2>
                 <div
-                    className={`projects__stacked-cards relative w-full mt-16 md:mt-24 ${cards[0].calssName}`}
+                    className='projects__stacked-cards relative w-full mt-16 md:mt-24'
                 >
                     {
                         React.Children.toArray(cards.map((card, idx) => {
@@ -63,6 +62,6 @@ export default function Projects() {
                         ))}
                 </div>
             </div>
-        </section>
+        </section >
     );
 }

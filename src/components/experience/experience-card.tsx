@@ -53,7 +53,6 @@ export default function ExperienceCard(props: ExperienceProps) {
             <div className="experience-card__company-logo">
                 <Image className="experience-card__company-logo-img p-2" width="100" height="100" src={companyLogo} alt={company} loading='lazy' />
                 <motion.div className="experience-card__company-logo-overlay"
-                    initial={{ transform: "translateY(0)" }}
                     animate={inView ? "inView" : "outView"}
                     variants={logoVariants}
                 ></motion.div>
@@ -62,7 +61,6 @@ export default function ExperienceCard(props: ExperienceProps) {
                 className={`experience-card__details md:w-1/2 absolute mt-24 ml-16 md:ml-0
                 ${!leftSide ? "md:-right-4 md:pl-8" : "md:-left-4 md:text-right md:pr-8"}`}
                 animate={inView ? "inView" : "outView"}
-                initial={{ x: leftSide ? '-100%' : "100%", opacity: 0, }}
                 ref={ref}
                 variants={detailsVariants}
             >
@@ -76,7 +74,6 @@ export default function ExperienceCard(props: ExperienceProps) {
             </motion.div>
             <div className="experience-card__progress-bar ml-11 md:ml-0">
                 <motion.div className="experience-card__progress-bar-overlay"
-                    initial={{ transform: "translateY(0)" }}
                     animate={inView ? "inView" : "outView"}
                     variants={progressBarVariants}
                 ></motion.div>

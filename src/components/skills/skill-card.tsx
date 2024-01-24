@@ -27,7 +27,6 @@ export default function Skill(props: skillProps) {
     return (
         <motion.div className="skill flex flex-col items-center rounded-md h-36 py-4"
             animate={inView ? "inView" : "outView"}
-            initial={{ x: "-100%", opacity: 0 }}
             ref={ref}
             variants={itemVariants}
         >

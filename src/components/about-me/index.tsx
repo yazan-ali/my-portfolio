@@ -13,8 +13,7 @@ export default function AboutMe() {
                         x: 0,
                         opacity: 1,
                         transition: {
-                            type: "spring", duration: 2, bounce: 0.4,
-                            delay: 1.5
+                            type: "spring", duration: 2, delay: 1.5
                         }
                     }}
                     initial={{ x: 300, opacity: 0 }}

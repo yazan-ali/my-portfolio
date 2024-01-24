@@ -2,6 +2,7 @@
 
 .email-form {
     &__form {
+        background: linear-gradient(#4cb3d0, #4b45bd);
         color: #fff;
         box-shadow: 0 0 toRem(10) rgba(0, 0, 0, 0.7);
     }
@@ -10,17 +11,12 @@
         padding: 1rem;
         border-radius: toRem(5);
         outline: none;
-        color: #525252;
-        font-weight: 700;
+        color: #000;
     }
 
     &__btn {
         color: #4b45bd;
         background: #fff;
         border-radius: toRem(5);
-    }
-
-    &__bg {
-        background: linear-gradient(#4cb3d0, #4b45bd);
     }
 }
