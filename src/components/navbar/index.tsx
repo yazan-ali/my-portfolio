@@ -50,18 +50,6 @@ export default function Navbar() {
                                     <FontAwesomeIcon className='text-2xl' icon={contact.icon} />
                                 </a>
                             )))}
-                        {/* <li onClick={handlNavbarOpen}>
-                            <FontAwesomeIcon className='text-2xl' icon={faLinkedin} />
-                        </li>
-                        <li onClick={handlNavbarOpen}>
-                            <FontAwesomeIcon className='text-2xl' icon={faGithub} />
-                        </li>
-                        <li onClick={handlNavbarOpen}>
-                            <FontAwesomeIcon className='text-2xl' icon={faFile} />
-                        </li>
-                        <li onClick={handlNavbarOpen}>
-                            <FontAwesomeIcon className='text-2xl' icon={faSquarePhone} />
-                        </li> */}
                     </ul>
                 </ul>
             </div>
