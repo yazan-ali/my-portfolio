@@ -377,7 +377,7 @@ const experiences = [
         position: "React JS Developer",
         startDate: "10/2020",
         endDate: "03/2021",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        description: "I worked at Norsia as a React Js developer, my responsibilities were to develop different components to help wealth managers and investors to manage their wealth."
     },
     {
         company: "Atypon",
@@ -385,14 +385,14 @@ const experiences = [
         position: "Forntend Engineer Intern",
         startDate: "06/2022",
         endDate: "09/2022",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        description: "I joined Atypon as a Frontend Engineer Intern, in this internship we learned a lot about web development and advanced topics in front-end development, and we developed a lot of projects using HTML, SCSS, JS, TS, React JS, Jest, and Node JS."
     },
     {
         company: "Atypon",
         companyLogo: "/images/atypon-logo.svg",
         position: "Software Engineer",
         startDate: "09/2022",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        description: "After the Internship I joined Atypon as a Software Engineer, I worked on developing new projects and maintained a lot of projects, created unit test cases for a lot of widgets and components, fixed the accessibility issues, and enhanced the accessibility for a lot of projects."
     },
 ]
 

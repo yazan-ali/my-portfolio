@@ -18,10 +18,12 @@ export default function AboutMe() {
                     }}
                     initial={{ x: 300, opacity: 0 }}
                 >
-                    <h1 className="styled-heading text-3xl font-bold">Lorem Ipsum</h1>
+                    <h1 className="styled-heading text-3xl font-bold">Hi, I'm Yazan</h1>
                     <p className="text-lg">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                        I am a software engineer with a passion for creating innovative and efficient websites.
+                        My commitment to delivering high-quality solutions is fueled by a genuine enthusiasm for
+                        staying at the forefront of web development trends.
+                        Let's build the future together through code.
                     </p>
                     <a href="#skills" className="btn btn-primary mt-3">Know More</a>
                 </motion.div>
