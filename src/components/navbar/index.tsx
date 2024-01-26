@@ -42,7 +42,6 @@ export default function Navbar() {
                     <li className="py-2 md:py-0 md:px-3">
                         <a href="#contact-me" onClick={handlNavbarOpen}>Contact Me</a>
                     </li>
-                    {/* navbar footer */}
                     <ul className="nav__footer flex justify-between md:hidden absolute bottom-4">
                         {
                             React.Children.toArray(contacts.map(contact => (
