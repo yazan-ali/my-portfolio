@@ -2,8 +2,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faSquarePhone, faFile } from '@fortawesome/free-solid-svg-icons';
 import { contacts } from "@/data";
 import "./navbar.scss";
 
@@ -17,7 +15,7 @@ export default function Navbar() {
     return (
         <nav className={`navbar flex justify-center ${isNavbarOpen ? "open" : ""}`}>
             <div className="container md:flex justify-between items-center md:h-16 px-0 md:px-4 mx-0">
-                <div className="nav-toggle__wrapper flex justify-between p-4 md:p-0">
+                <div className="nav-header flex justify-between p-4 md:p-0">
                     <a href="#about-me" className="text-xl font-semibold">Yazan Abuali</a>
                     <div className="block md:hidden">
                         {isNavbarOpen ? <FontAwesomeIcon className="nav-toggle__cross text-2xl" icon={faXmark} onClick={handlNavbarOpen} />
