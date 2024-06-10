@@ -7,7 +7,8 @@ import {
     faReact,
     faNodeJs,
     faGithub,
-    faLinkedin
+    faLinkedin,
+    faJava
 } from '@fortawesome/free-brands-svg-icons';
 import { faUniversalAccess, faSquarePhone, faFile } from '@fortawesome/free-solid-svg-icons';
 
@@ -148,6 +149,29 @@ const skills = [
         animationDiriction: "right",
         skillLogoWidth: 100,
     },
+    {
+        skillName: "NestJS",
+        color: "#E0234E",
+        skillLogo: { img: true, logo: "/images/nestjs-icon.svg" },
+        duration: 1.5,
+        animationDiriction: "left",
+        skillLogoWidth: 90,
+    },
+    {
+        skillName: "Java",
+        color: "#f89820",
+        skillLogo: faJava,
+        duration: 1.5,
+        animationDiriction: "right",
+    },
+    {
+        skillName: "Spring Boot",
+        color: "#63b175",
+        skillLogo: { img: true, logo: "/images/spring-boot.svg" },
+        duration: 1.5,
+        animationDiriction: "left",
+        skillLogoWidth: 90,
+    },
 ];
 
 const contacts = [
@@ -167,7 +191,7 @@ const contacts = [
         contactType: "CV",
         icon: faFile,
         color: "#00BFBB",
-        link: "https://drive.google.com/file/d/1oeI7co7lCbx0pTNYrNkqsksvrg8dMP2R/view"
+        link: "https://drive.google.com/file/d/1GF0zgJ9FLfFCrwiod6AP6d2cBbFRgs2c/view"
     },
     {
         contactType: "Phon",
