@@ -400,7 +400,7 @@ const experiences = [
         companyLogo: "/images/norsia-logo.png",
         position: "React JS Developer",
         startDate: "10/2020",
-        endDate: "03/2021",
+        endDate: "06/2021",
         description: "I worked at Norsia as a React Js developer, my responsibilities were to develop different components to help wealth managers and investors to manage their wealth."
     },
     {
