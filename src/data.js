@@ -10,7 +10,7 @@ import {
     faLinkedin,
     faJava
 } from '@fortawesome/free-brands-svg-icons';
-import { faUniversalAccess, faSquarePhone, faFile } from '@fortawesome/free-solid-svg-icons';
+import { faUniversalAccess, faSquarePhone, faFile, faFileContract } from '@fortawesome/free-solid-svg-icons';
 
 const skills = [
     {
@@ -91,6 +91,30 @@ const skills = [
         skillName: "Tailwind CSS",
         color: "#06b6d4",
         skillLogo: { img: true, logo: "/images/tailwind-css.svg" },
+        duration: 1.5,
+        animationDiriction: "left",
+        skillLogoWidth: 90,
+    },
+    {
+        skillName: "Blockchain",
+        color: "#ad245a",
+        skillLogo: { img: true, logo: "/images/blockchain.png" },
+        duration: 1.5,
+        animationDiriction: "left",
+        skillLogoWidth: 80,
+    },
+    {
+        skillName: "Smart Contracts",
+        color: "gray",
+        skillLogo: faFileContract,
+        duration: 1.5,
+        animationDiriction: "left",
+        skillLogoWidth: 80,
+    },
+    {
+        skillName: "Solidity",
+        color: "#6C19FF",
+        skillLogo: { img: true, logo: "/images/solidity.png" },
         duration: 1.5,
         animationDiriction: "left",
         skillLogoWidth: 90,
@@ -191,7 +215,7 @@ const contacts = [
         contactType: "CV",
         icon: faFile,
         color: "#00BFBB",
-        link: "https://drive.google.com/file/d/1SetzXPPmWFi6Sdg9Vigl5-D25y6Fr34v/view?usp=drivesdk"
+        link: "https://drive.google.com/file/d/1vhTwEbkCT59nmtvB1LCJZNFYWBM3O8q0/view"
     },
     {
         contactType: "Phon",
@@ -273,6 +297,27 @@ const ascoDevelopmentStack = [
     }
 ];
 
+const kickstarterDevelopmentStack = [
+    {
+        name: "Next JS"
+    },
+    {
+        name: "Taliwind CSS"
+    },
+    {
+        name: "TypeScript"
+    },
+    {
+        name: "Shadcn UI"
+    },
+    {
+        name: "Solidity"
+    },
+    {
+        name: "Ethereum Smart Contracts"
+    }
+];
+
 const pizzaHouseDevelopmentStack = [
     {
         name: "HTML",
@@ -287,7 +332,7 @@ const pizzaHouseDevelopmentStack = [
         bg: ""
     },
     {
-        name: "Next Js",
+        name: "Next JS",
         bg: ""
     },
     {
@@ -341,6 +386,22 @@ const promotionSystemDevelopmentStack = [
 
 const projects = [
     {
+        projectName: "Decentralized Crowdfunding Platform",
+        developmentStack: kickstarterDevelopmentStack,
+        projectsDiscription: "A Web3-based crowdfunding platform inspired by Kickstarter, designed to enhance security and prevent scams. Contributors not only fund campaigns but also become approvers, supervising payment requests made by campaign owners. Each payment request includes a description, amount, and recipient's wallet address, ensuring full transparency in fund allocation. Built on blockchain to provide trustless and verifiable transactions.",
+        backgroundColor: "#531d85",
+        projectImgs: [
+            "/images/kickstarter-1.png",
+            "/images/kickstarter-2.png",
+            "/images/kickstarter-3.png",
+            "/images/kickstarter-4.png",
+            "/images/kickstarter-5.png",
+            "/images/kickstarter-6.png",
+        ],
+        projectCodeLink: "https://github.com/yazan-ali/web3-kickstarter",
+        liveSiteLink: "https://web3-kickstarter-one.vercel.app",
+    },
+    {
         projectName: "ASCO Publications",
         developmentStack: ascoDevelopmentStack,
         projectsDiscription: "A website for American Society of Clinical Oncology publcations, where the users can navigate different journals, list of issues, table of contents and read many articles, I worked on the front-end part using:",
@@ -365,9 +426,9 @@ const projects = [
         projectCodeLink: "https://github.com/yazan-ali/promotion-system-my-graduation-project",
     },
     {
-        projectName: "Next Js App",
+        projectName: "Next JS App",
         developmentStack: pizzaHouseDevelopmentStack,
-        projectsDiscription: "A full stack website developed using Next js it's a website for a restaurant the owner can add, update and delete meals and the user can shop and add items to the shopping cart this website developed using :",
+        projectsDiscription: "A full stack website developed using Next JS it's a website for a restaurant the owner can add, update and delete meals and the user can shop and add items to the shopping cart this website developed using :",
         backgroundColor: "#D13A00",
         projectImgs: [
             "https://res.cloudinary.com/pic-gallary/image/upload/v1653730622/my-portofolio/28.05.2022_12.31.57_REC_t42xfk.png",
