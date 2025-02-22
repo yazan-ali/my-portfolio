@@ -97,7 +97,7 @@ const skills = [
     },
     {
         skillName: "Blockchain",
-        color: "#ad245a",
+        color: "gray",
         skillLogo: { img: true, logo: "/images/blockchain.png" },
         duration: 1.5,
         animationDiriction: "left",
