@@ -215,7 +215,7 @@ const contacts = [
         contactType: "CV",
         icon: faFile,
         color: "#00BFBB",
-        link: "https://drive.google.com/file/d/1vhTwEbkCT59nmtvB1LCJZNFYWBM3O8q0/view"
+        link: "https://drive.google.com/file/d/19MvltfavOyoaoAM4BE7R-rJUNVBXs2HS/view"
     },
     {
         contactType: "Phon",
